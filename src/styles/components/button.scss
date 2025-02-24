@@ -1,0 +1,70 @@
+@use '../theme.scss' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: $space-4;
+  @include base-interactive-element;
+
+  font-size: $text-sm;
+  font-weight: 500;
+
+  width: fit-content;
+
+  &-primary {
+    background: $mauve;
+    color: $crust;
+
+    &:hover {
+      background-color: $flamingo;
+      color: $mantle;
+    }
+  }
+
+  &-secondary {
+    background: $surface1;
+    color: $text;
+
+    &:hover {
+      background-color: $surface2;
+      color: $text;
+    }
+  }
+
+  &-ghost {
+    background: transparent;
+    color: $text;
+
+    &:hover {
+      color: $subtext0;
+    }
+  }
+
+  &-sm {
+    @include size-variant($button-height-sm);
+  }
+
+  &-md {
+    @include size-variant($button-height-md);
+  }
+
+  &-lg {
+    @include size-variant($button-height-lg);
+  }
+
+  &-full {
+    width: 100%;
+  }
+}
+
+.animate {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
+}
+
+.btn:active.btn-scale {
+  transform: scale(0.9);
+}

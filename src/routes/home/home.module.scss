@@ -1,0 +1,8 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: $space-2;
+}

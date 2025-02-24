@@ -1,0 +1,60 @@
+@use '../theme.scss' as *;
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: $space-2;
+}
+
+.input {
+  width: 100%;
+  padding: $space-2 $space-3;
+  font-size: $text-sm;
+  line-height: 1.5;
+  color: $text;
+  background-color: $surface0;
+  border: 1px solid $overlay0;
+  border-radius: $radius-md;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:not(:disabled) {
+    &:hover {
+      border-color: $overlay2;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $mauve;
+      box-shadow: 0 0 0 2px rgba($mauve, 0.25);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: $surface1;
+  }
+
+  &::placeholder {
+    color: $overlay1;
+  }
+
+  &-error {
+    border-color: $red;
+
+    &:focus {
+      border-color: $red;
+      box-shadow: 0 0 0 2px rgba($red, 0.25);
+    }
+  }
+
+  &-full-width {
+    width: 100%;
+  }
+}
+
+.input-error-message {
+  margin-top: $space-1;
+  font-size: $text-xs;
+  color: $red;
+}

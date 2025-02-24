@@ -1,0 +1,19 @@
+@use "@/styles/theme.scss" as *;
+
+$text-sizes: (
+  xs: $text-xs,
+  sm: $text-sm,
+  md: $text-md,
+  lg: $text-lg,
+  xl: $text-xl
+);
+
+@each $size, $value in $text-sizes {
+  .text-#{$size} {
+    font-size: $value;
+  }
+}
+
+.text-mauve {
+  color: $mauve;
+}

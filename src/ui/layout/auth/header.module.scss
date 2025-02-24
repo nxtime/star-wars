@@ -1,0 +1,17 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: $header-height;
+}
+
+.actions {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  gap: $space-2;
+}

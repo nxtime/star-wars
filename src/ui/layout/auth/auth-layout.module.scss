@@ -1,0 +1,13 @@
+@use '@/styles/theme.scss' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding-inline: $space-4;
+  margin-inline: auto;
+
+  width: 100%;
+  max-width: $desktop;
+}

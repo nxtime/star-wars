@@ -1,0 +1,28 @@
+@import '../theme.scss';
+
+.menu {
+  background: $base;
+  border-radius: $radius-lg;
+  padding: $space-2;
+  box-shadow: var(--shadow-lg);
+  animation: fadeIn $transition-normal;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    padding: $space-2 $space-3;
+    color: $text;
+    border-radius: $radius-md;
+    cursor: pointer;
+    transition: background $transition-fast;
+
+    &:hover {
+      background: $surface1;
+    }
+
+    &.active {
+      background: $surface2;
+      color: $blue;
+    }
+  }
+}
