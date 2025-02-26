@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+# 🌌 Star Wars React Project 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ⚠️ **UNDER CONSTRUCTION** ⚠️
+> This project is still in development. Stay tuned for updates! 🛠️
 
-Currently, two official plugins are available:
+## ✨ Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the **Star Wars React Project**! 🌠 This is a fan-based web application built using **React**, featuring:
 
-## Expanding the ESLint configuration
+- 🖥️ **SCSS** for styling
+- ⚡ **Built-in React functions** for optimized performance
+- 🧠 **Context API** for state management
+- 🔐 **Authentication system** for user access
+- 📦 **Modular structure** for better scalability
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+| Tech         | Description                        |
+|-------------|----------------------------------|
+| ⚛️ React    | Core library for UI development  |
+| 🎨 SCSS    | Enhanced styling with variables  |
+| 🌐 React Router | Navigation between pages     |
+| 🧠 Context API | Global state management       |
+| 🔐 Auth System | Secure authentication flow   |
+| 🛠️ Custom Hooks | Reusable logic components   |
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📷 Screenshots
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+_(Coming soon...)_
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📜 Features
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+✅ Dynamic Star Wars-themed UI 🌠  
+✅ Secure Login & Authentication 🔐  
+✅ Context API for state management 🧠  
+✅ Modular component structure 🏗️  
+✅ Dark mode support 🌑  
+✅ Responsive design 📱  
+
+## 🔮 Future Plans
+
+🚧 **Upcoming Features:**
+
+- 🎥 **Star Wars Character & Ship Explorer** 🛸
+- 📜 **Interactive Star Wars Timeline** 🕰️
+- 🌌 **Galactic News Feed** 📰
+- 🏆 **Leaderboard for Star Wars Trivia** 🤓
+- 🛍️ **Customizable Star Wars Store** 🛒
+
+## 🛠️ Installation & Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/nxtime/star-wars.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd star-wars
+   ```
+3. Install dependencies:
+   ```sh
+   pnpm i
+   ```
+4. Start the development server:
+   ```sh
+   pnpm dev
+   ```
+
+## 🌟 Contributing
+
+Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
+
+## 📜 License
+
+This project is for educational and fan purposes only and is **not affiliated with Star Wars or Disney**. All rights to Star Wars belong to their respective owners. ⚖️
+
+---
+
+> **May the Code Be With You!** ✨
+
