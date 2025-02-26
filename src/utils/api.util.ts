@@ -1,4 +1,5 @@
 import axios from "axios";
+
 import { ApiStatus } from "@/models/api.model";
 
 const SERVER_URL = "http://192.168.1.19:7979";

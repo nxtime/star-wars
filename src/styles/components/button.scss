@@ -1,43 +1,44 @@
-@use '../theme.scss' as *;
+@use "../theme.scss" as *;
 
 .btn {
+  @include base-interactive-element;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding-inline: $space-4;
-  @include base-interactive-element;
+  color: var(--color, var(--btn-color));
 
-  font-size: $text-sm;
+  font-size: var(--text-size, #{$text-sm});
   font-weight: 500;
 
   width: fit-content;
 
   &-primary {
+    --btn-color: #{$crust};
     background: $mauve;
-    color: $crust;
 
     &:hover {
       background-color: $flamingo;
-      color: $mantle;
+      --btn-color: #{$mantle};
     }
   }
 
   &-secondary {
+    --btn-color: #{$text};
     background: $surface1;
-    color: $text;
 
     &:hover {
       background-color: $surface2;
-      color: $text;
     }
   }
 
   &-ghost {
+    --btn-color: #{$text};
     background: transparent;
-    color: $text;
 
     &:hover {
-      color: $subtext0;
+      --btn-color: #{$subtext0};
     }
   }
 

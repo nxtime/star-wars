@@ -1,14 +1,14 @@
+@forward "./typography.scss";
 @forward "./theme.scss";
 @forward "./normalize.scss";
 @forward "./animation.scss";
-@forward "./typography.scss";
 
 body {
   font-family: var(--font-family-sans);
   height: 100vh;
 
   background-color: var(--crust);
-  color: var(--text)
+  color: var(--text);
 }
 
 #root {

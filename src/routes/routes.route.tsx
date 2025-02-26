@@ -1,5 +1,6 @@
-import AuthLayout from "@/ui/layout/auth/auth-layout.component";
 import { FC, JSX, lazy, PropsWithChildren } from "react";
+
+import AuthLayout from "@/ui/layout/auth/auth-layout.component";
 import { Routes } from "@/models/routes.model";
 import { useAuth } from "@/hooks/use-auth.hooks";
 import { useRouter } from "@/hooks/use-router.hook";

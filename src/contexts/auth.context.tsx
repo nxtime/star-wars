@@ -1,8 +1,10 @@
-import axios from "axios";
 import { createContext, FC, PropsWithChildren, useReducer } from "react";
+
 import { authReducer } from "../reducers/auth-reducer.reducer";
 import { AuthActionType, AuthLoginDto, AuthState } from "../models/auth.model";
 import type { User, UserCredentials } from "../models/user.model";
+
+import { api } from "@/utils/api.util";
 
 interface AuthContextType extends AuthState {
   login(credentials: { email: string; password: string }): Promise<void>;
@@ -17,6 +19,7 @@ const initialState: AuthState = {
   error: null
 };
 
+
 export const AuthContext = createContext<AuthContextType | null>(null);
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
@@ -29,7 +32,7 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
       const isLoginValid = credentials.email === "admin@email.com" && !!credentials.password;
       if (!isLoginValid) throw new Error("Login Invalid!");
 
-      const { data } = await axios.get<AuthLoginDto>("/login");
+      const { data } = await api.get<AuthLoginDto>("/login");
 
       dispatch({
         type: AuthActionType.LOGIN_SUCCESS,

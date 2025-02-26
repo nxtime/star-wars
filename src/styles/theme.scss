@@ -29,7 +29,7 @@
 
   /* Typography */
   --font-family-sans: system-ui, -apple-system, sans-serif;
-  --font-family-mono: 'JetBrains Mono', monospace;
+  --font-family-mono: "JetBrains Mono", monospace;
 
   --font-black: 700;
   --font-extra-bold: 600;
@@ -214,7 +214,7 @@ $transition-normal: var(--transition-normal);
 @mixin base-interactive-element {
   border-radius: $radius-md;
   transition: all $transition-normal;
-  color: $text;
+  color: var(--color);
 }
 
 @mixin size-variant($height) {

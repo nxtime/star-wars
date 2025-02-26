@@ -1,7 +1,6 @@
 @use "@/styles/theme.scss" as *;
 
-
-.sign-in-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +8,7 @@
   flex: 1;
 }
 
-.sign-in-form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,12 +21,12 @@
   border-radius: $radius-sm;
 }
 
-.sign-in-fieldset {
+.fieldset {
   display: flex;
   flex-direction: column;
 }
 
-.form-label {
+.formLabel {
   display: block;
   margin-bottom: $space-2;
   font-size: $text-sm;
@@ -35,21 +34,7 @@
   color: $subtext1;
 }
 
-.sign-in-button {
-  margin-top: $space-4;
-  justify-self: center;
-
-  // Use the primary button style
-  &:not(:disabled) {
-    background: $mauve;
-    color: $crust;
-  }
-
-  // Apply a size variant
-  @include size-variant($button-height-md);
-}
-
-.sign-in-error {
+.error {
   padding: $space-3;
   margin-bottom: $space-4;
   background-color: rgba($red, 0.1);

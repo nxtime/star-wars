@@ -1,4 +1,5 @@
 import { FC, PropsWithChildren } from "react";
+
 import Header from "./header.component";
 import styles from "./auth-layout.module.scss";
 

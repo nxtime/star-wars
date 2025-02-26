@@ -5,15 +5,22 @@ $text-sizes: (
   sm: $text-sm,
   md: $text-md,
   lg: $text-lg,
-  xl: $text-xl
+  xl: $text-xl,
+);
+
+$colors: (
+  mauve: $mauve,
+  flamingo: $flamingo,
 );
 
 @each $size, $value in $text-sizes {
   .text-#{$size} {
-    font-size: $value;
+    --text-size: #{$value};
   }
 }
 
-.text-mauve {
-  color: $mauve;
+@each $color, $value in $colors {
+  .text-#{$color} {
+    --color: #{$value};
+  }
 }

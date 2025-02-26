@@ -1,4 +1,5 @@
 import { createContext, FC, PropsWithChildren, useEffect, useState } from "react";
+
 import { Routes } from "../models/routes.model";
 
 type RouteContextType = {
@@ -23,10 +24,7 @@ const getCurrentRoute = (): Routes => {
 export const RouterContext = createContext<RouteContextType | null>(null);
 
 const RouterProvider: FC<PropsWithChildren> = ({ children }) => {
-
   const [route, setRoute] = useState<Routes>(getCurrentRoute());
-
-  console.log({ route })
 
   const goto = (newRoute: Routes) => {
     const path = newRoute;

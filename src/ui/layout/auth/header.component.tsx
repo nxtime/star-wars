@@ -1,7 +1,8 @@
+import styles from "./header.module.scss";
+
 import { Button } from "@/ui/components";
 import { Routes } from "@/models/routes.model";
 
-import styles from "./header.module.scss";
 
 const Header = () => {
   return (

@@ -1,8 +1,10 @@
 import { useState } from "react";
+
+import styles from "./sign-in.module.scss";
+
 import { useAuth } from "@/hooks/use-auth.hooks";
-import Input from "@/ui/components/input/input.component";
-import "./sign-in.scss"
 import { Button } from "@/ui/components";
+import Input from "@/ui/components/input/input.component";
 
 const SignIn = () => {
   const { login } = useAuth();
@@ -33,15 +35,15 @@ const SignIn = () => {
   };
 
   return (
-    <div className="sign-in-container">
-      <form onSubmit={handleSubmit} className="sign-in-form">
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit} className={styles.form}>
         <h2 className="sign-in-title text-xl">Sign In</h2>
 
         {error && <div className="sign-in-error">{error}</div>}
 
         <fieldset className="sign-in-fieldset" disabled={isLoading}>
           <div className="form-group">
-            <label htmlFor="email" className="form-label">Email:</label>
+            <label htmlFor="email" className={styles.formLabel}>Email:</label>
             <Input
               id="email"
               name="email"
@@ -51,8 +53,8 @@ const SignIn = () => {
             />
           </div>
 
-          <div className="form-group">
-            <label htmlFor="password" className="form-label">Password:</label>
+          <div className={styles.formGroup}>
+            <label htmlFor="password" className={styles.formLabel}>Password:</label>
             <Input
               id="password"
               name="password"
@@ -64,7 +66,6 @@ const SignIn = () => {
 
           <Button
             type="submit"
-            className="sign-in-button"
             disabled={isLoading}
             fullWidth
           >
