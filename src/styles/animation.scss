@@ -23,49 +23,49 @@
 @mixin slide-animation($direction, $distance) {
   @keyframes slideIn#{$direction} {
     from {
-      transform: translate#{$direction}(#{$distance});
+      transform: translate#{$direction }(#{$distance});
       opacity: 0;
     }
 
     to {
-      transform: translate#{$direction}(0);
+      transform: translate#{$direction }(0);
       opacity: 1;
     }
   }
 }
 
-@include slide-animation('X', 100%);
-@include slide-animation('X', -100%);
-@include slide-animation('Y', 100%);
-@include slide-animation('Y', -100%);
+@include slide-animation("X", 100%);
+@include slide-animation("X", -100%);
+@include slide-animation("Y", 100%);
+@include slide-animation("Y", -100%);
 
 // Bounce Animations
 @mixin bounce-animation($direction, $distance) {
   @keyframes bounceIn#{$direction} {
     0% {
-      transform: translate#{$direction}(#{$distance});
+      transform: translate#{$direction }(#{$distance});
       opacity: 0;
     }
 
     60% {
-      transform: translate#{$direction}(-25px);
+      transform: translate#{$direction }(-25px);
       opacity: 1;
     }
 
     80% {
-      transform: translate#{$direction}(10px);
+      transform: translate#{$direction }(10px);
     }
 
     100% {
-      transform: translate#{$direction}(0);
+      transform: translate#{$direction }(0);
     }
   }
 }
 
-@include bounce-animation('X', 600px);
-@include bounce-animation('X', -600px);
-@include bounce-animation('Y', 600px);
-@include bounce-animation('Y', -600px);
+@include bounce-animation("X", 600px);
+@include bounce-animation("X", -600px);
+@include bounce-animation("Y", 600px);
+@include bounce-animation("Y", -600px);
 
 // Scale Animations
 @keyframes scaleIn {
@@ -93,7 +93,7 @@
 }
 
 // Utility Classes
-.animate {
+:not(:disabled).animate {
   animation-duration: 0.3s;
   animation-fill-mode: both;
 

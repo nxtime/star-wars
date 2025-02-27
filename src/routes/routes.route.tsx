@@ -1,19 +1,16 @@
-import { FC, JSX, lazy, PropsWithChildren } from "react";
-
 import AuthLayout from "@/ui/layout/auth/auth-layout.component";
+import { FC, JSX, lazy, PropsWithChildren } from "react";
 import { Routes } from "@/models/routes.model";
 import { useAuth } from "@/hooks/use-auth.hooks";
 import { useRouter } from "@/hooks/use-router.hook";
 
 const Home = lazy(() => import("@/routes/home/home.route"));
-const SignIn = lazy(() => import("@/routes/sign-in/sign-in.route"));
+const SignUp = lazy(() => import("@/routes/sign-up/sign-up.route"));
 
-const routes: Record<Routes, React.LazyExoticComponent<() => JSX.Element>> = {
+const routes: Partial<Record<Routes, React.LazyExoticComponent<() => JSX.Element>>> = {
   [Routes.HOME]: Home,
-  [Routes.SIGN_IN]: SignIn,
-  [Routes.SIGN_UP]: Home,
-  [Routes.PLANET]: Home,
-  [Routes.CHARACTER]: Home
+  [Routes.SIGN_IN]: Home,
+  [Routes.SIGN_UP]: SignUp,
 }
 
 const SimpleLayout: FC<PropsWithChildren> = ({ children }) => <div>{children}</div>;

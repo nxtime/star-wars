@@ -19,7 +19,6 @@ const initialState: AuthState = {
   error: null
 };
 
-
 export const AuthContext = createContext<AuthContextType | null>(null);
 
 const AuthProvider: FC<PropsWithChildren> = ({ children }) => {

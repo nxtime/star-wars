@@ -5,6 +5,13 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+
+      }
+    }
+  },
   server: {
     host: "0.0.0.0"
   },
@@ -18,7 +25,8 @@ export default defineConfig({
       '@routes': path.resolve(__dirname, './src/routes'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@ui': path.resolve(__dirname, './src/ui'),
-      '@utils': path.resolve(__dirname, './src/utils')
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@locales': path.resolve(__dirname, './public/locales')
     }
   }
 })

@@ -2,9 +2,12 @@ import styles from "./header.module.scss";
 
 import { Button } from "@/ui/components";
 import { Routes } from "@/models/routes.model";
+import { useTranslate } from "@/hooks/use-translate.hook";
 
 
 const Header = () => {
+  const { t } = useTranslate();
+
   return (
     <header className={styles.container}>
       <Button
@@ -14,7 +17,7 @@ const Header = () => {
         text="xl"
         animation={null}
       >
-        Star Wars
+        {t('common.title')}
       </Button>
       <div className={styles.actions}>
         <Button
@@ -22,14 +25,14 @@ const Header = () => {
           intent="ghost"
           to={Routes.SIGN_IN}
         >
-          Sign In
+          {t('common.signIn')}
         </Button>
         <Button
           size="sm"
           intent="ghost"
           to={Routes.SIGN_UP}
         >
-          Sign Up
+          {t('common.signUp')}
         </Button>
       </div>
     </header>

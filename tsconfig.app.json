@@ -33,8 +33,9 @@
       "@routes/*": ["./src/routes/*"],
       "@styles/*": ["./src/styles/*"],
       "@ui/*": ["./src/ui/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@locales/*": ["./public/locales/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "public/locales", "src/**/*.d.ts"]
 }
