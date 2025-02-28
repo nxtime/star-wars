@@ -1,0 +1,414 @@
+@use "@/styles/theme.scss" as *;
+
+// Common section styles
+.section {
+  width: 100%;
+  padding: $space-12 $space-4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Content {
+    max-width: $desktop;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &Title {
+    font-size: $text-xl;
+    font-weight: 600;
+    margin-bottom: $space-6;
+    text-align: center;
+    color: $text;
+  }
+
+  &Subtitle {
+    font-size: $text-lg;
+    margin-bottom: $space-8;
+    text-align: center;
+    color: $subtext1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// Hero section styles
+.hero {
+  min-height: 80vh;
+  background:
+    linear-gradient(to bottom, rgba($mantle, 0.9), rgba($crust, 0.9)),
+    url("/images/stars-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $text;
+  position: relative;
+  overflow: hidden;
+
+  &Content {
+    z-index: 1;
+    padding: $space-4;
+    max-width: 800px;
+  }
+
+  &Title {
+    font-size: 3rem;
+    margin-bottom: $space-4;
+    font-weight: 700;
+
+    span {
+      color: $yellow;
+    }
+  }
+
+  &Subtitle {
+    font-size: 1.5rem;
+    margin-bottom: $space-8;
+    color: $subtext0;
+  }
+
+  &Actions {
+    display: flex;
+    gap: $space-4;
+    justify-content: center;
+    margin-top: $space-6;
+  }
+}
+
+// Features section styles
+.features {
+  background-color: $base;
+
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: $space-6;
+    margin-top: $space-8;
+  }
+
+  &Card {
+    background-color: $surface0;
+    border-radius: $radius-lg;
+    padding: $space-6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &Icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: $space-4;
+      color: $mauve;
+    }
+
+    &Title {
+      font-size: $text-lg;
+      font-weight: 600;
+      margin-bottom: $space-2;
+      color: $text;
+    }
+
+    &Description {
+      color: $subtext1;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Characters section styles
+.characters {
+  background-color: $mantle;
+
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: $space-4;
+    margin-top: $space-6;
+  }
+
+  &Card {
+    background-color: $surface0;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &Image {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background-color: $overlay0;
+    }
+
+    &Content {
+      padding: $space-4;
+    }
+
+    &Name {
+      font-size: $text-lg;
+      font-weight: 600;
+      margin-bottom: $space-2;
+      color: $text;
+    }
+
+    &Info {
+      color: $subtext1;
+      margin-bottom: $space-2;
+      display: flex;
+      flex-direction: column;
+      gap: $space-1;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: $space-1;
+      }
+    }
+  }
+}
+
+// Planets section styles
+.planets {
+  background-color: $crust;
+  position: relative;
+  overflow: hidden;
+
+  &List {
+    display: flex;
+    gap: $space-4;
+    margin-top: $space-6;
+    overflow-x: auto;
+    padding-bottom: $space-4;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $surface0;
+      border-radius: $radius-full;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $overlay1;
+      border-radius: $radius-full;
+    }
+  }
+
+  &Card {
+    min-width: 300px;
+    background-color: $surface0;
+    border-radius: $radius-lg;
+    padding: $space-4;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    &Image {
+      width: 100%;
+      height: 150px;
+      border-radius: $radius-md;
+      margin-bottom: $space-3;
+      background-color: $overlay0;
+    }
+
+    &Name {
+      font-size: $text-lg;
+      font-weight: 600;
+      margin-bottom: $space-2;
+      color: $text;
+    }
+
+    &Description {
+      color: $subtext1;
+      margin-bottom: $space-3;
+      line-height: 1.5;
+    }
+
+    &Stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: $space-2;
+
+      &Item {
+        display: flex;
+        flex-direction: column;
+
+        span:first-child {
+          font-size: $text-xs;
+          color: $subtext0;
+        }
+
+        span:last-child {
+          color: $text;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// Testimonials section styles
+.testimonials {
+  background-color: $base;
+
+  &List {
+    margin-top: $space-6;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: $space-6;
+  }
+
+  &Card {
+    background-color: $surface0;
+    border-radius: $radius-lg;
+    padding: $space-6;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &Quote {
+      font-size: $text-md;
+      line-height: 1.6;
+      margin-bottom: $space-4;
+      color: $text;
+      font-style: italic;
+
+      &::before {
+        content: "";
+        font-size: 3rem;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        color: rgba($mauve, 0.2);
+      }
+    }
+
+    &Author {
+      display: flex;
+      align-items: center;
+      gap: $space-3;
+
+      &Avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: $radius-full;
+        background-color: $overlay0;
+      }
+
+      &Info {
+        display: flex;
+        flex-direction: column;
+
+        &Name {
+          font-weight: 600;
+          color: $text;
+        }
+
+        &Title {
+          font-size: $text-sm;
+          color: $subtext1;
+        }
+      }
+    }
+  }
+}
+
+// Call to action section styles
+.cta {
+  background: linear-gradient(135deg, $mauve, $blue);
+  padding: $space-16 $space-4;
+
+  &Container {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  &Title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: $space-4;
+    color: $crust;
+  }
+
+  &Subtitle {
+    font-size: $text-lg;
+    margin-bottom: $space-8;
+    color: $surface0;
+  }
+
+  &Actions {
+    display: flex;
+    gap: $space-4;
+    justify-content: center;
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: $tablet) {
+  .hero {
+    &Title {
+      font-size: 2.5rem;
+    }
+
+    &Subtitle {
+      font-size: 1.2rem;
+    }
+
+    &Actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .cta {
+    &Title {
+      font-size: 2rem;
+    }
+
+    &Actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .section {
+    padding: $space-8 $space-3;
+  }
+
+  .hero {
+    &Title {
+      font-size: 2rem;
+    }
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta {
+    &Title {
+      font-size: 1.75rem;
+    }
+  }
+}

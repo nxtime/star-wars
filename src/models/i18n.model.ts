@@ -7,12 +7,12 @@ export type Pluralization = {
   other: string;
 };
 
+export type NestedTranslation = {
+  [key: string]: string | NestedTranslation;
+};
+
 export type Translations = {
-  [locale: string]: {
-    [key: string]: string | {
-      [nestedKey: string]: string;
-    };
-  };
+  [locale: string]: NestedTranslation;
 };
 
 export type I18nContextValues = {

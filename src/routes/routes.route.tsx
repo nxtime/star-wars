@@ -6,11 +6,12 @@ import { useRouter } from "@/hooks/use-router.hook";
 
 const Home = lazy(() => import("@/routes/home/home.route"));
 const SignUp = lazy(() => import("@/routes/sign-up/sign-up.route"));
+const SignIn = lazy(() => import("@/routes/sign-in/sign-in.route"));
 
 const routes: Partial<Record<Routes, React.LazyExoticComponent<() => JSX.Element>>> = {
   [Routes.HOME]: Home,
-  [Routes.SIGN_IN]: Home,
   [Routes.SIGN_UP]: SignUp,
+  [Routes.SIGN_IN]: SignIn,
 }
 
 const SimpleLayout: FC<PropsWithChildren> = ({ children }) => <div>{children}</div>;

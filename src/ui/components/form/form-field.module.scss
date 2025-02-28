@@ -1,0 +1,21 @@
+@use "@/styles/theme.scss" as *;
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-4;
+  width: 100%;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: $space-2;
+  font-size: $text-sm;
+  font-weight: 500;
+  color: $subtext1;
+}
+
+.required {
+  color: $red;
+  margin-left: $space-1;
+}

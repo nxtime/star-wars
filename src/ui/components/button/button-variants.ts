@@ -67,6 +67,7 @@ export const buttonVariants = cva(['btn'], {
       disabled: undefined,
       class: 'hover:bg-red/90',
     },
+
     {
       intent: 'ghost',
       active: true,
@@ -75,8 +76,8 @@ export const buttonVariants = cva(['btn'], {
     {
       animation: ['fade', 'slideRight', 'slideLeft', 'slideUp', 'slideDown', 'scale', 'bounce'],
       timing: 'easeInOut',
-      class: 'ease-in-out'
-    }
+      class: 'ease-in-out',
+    },
   ],
   defaultVariants: {
     intent: 'primary',
@@ -85,5 +86,5 @@ export const buttonVariants = cva(['btn'], {
     animation: "scale",
     text: "md",
     disabled: undefined
-  }
+  },
 });

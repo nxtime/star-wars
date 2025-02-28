@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { useForm } from "@/hooks/use-form.hook";
-import { Button } from "@/ui/components";
-import Input from "@/ui/components/input/input.component";
+import { Button, FormField } from "@/ui/components";
 import styles from "./sign-up.module.scss";
 import { useTranslate } from "@/hooks/use-translate.hook";
-import { SignUpFormFieldsConfig, SignupFormValues } from "./sign-up.contants";
+import { SignupFormValues, createSignUpFormConfig } from "./sign-up.contants";
 
 const SignupForm = () => {
   const { t } = useTranslate();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const signUpFormConfig = createSignUpFormConfig(t);
+
+  const form = useForm<SignupFormValues>(signUpFormConfig);
+
   const {
     handleSubmit,
-    getFieldProps,
     isValid,
-    touched,
-    reset,
-    errors
-  } = useForm<SignupFormValues>(SignUpFormFieldsConfig);
+    reset
+  } = form;
 
   const handleFormSubmit = async (values: SignupFormValues) => {
     setIsLoading(true);
@@ -28,12 +28,9 @@ const SignupForm = () => {
       console.warn('Form submitted with values:', values);
 
       setFormSubmitted(true);
-
       reset();
     } catch (err) {
-
       console.error('Error submitting form:', err);
-
     } finally {
       setIsLoading(false);
     }
@@ -41,12 +38,14 @@ const SignupForm = () => {
 
   if (formSubmitted) {
     return (
-      <div className="success-message">
-        <h2>Thank you for signing up!</h2>
-        <p>Your account has been created successfully.</p>
-        <Button onClick={() => setFormSubmitted(false)}>
-          Sign Up Another User
-        </Button>
+      <div className={styles.container}>
+        <div className={styles.successMessage}>
+          <h2>{t('forms.submission.success')}</h2>
+          <p>{t('forms.submission.successMessage')}</p>
+          <Button onClick={() => setFormSubmitted(false)}>
+            {t('common.createAnotherAccount')}
+          </Button>
+        </div>
       </div>
     );
   }
@@ -54,104 +53,95 @@ const SignupForm = () => {
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit(handleFormSubmit)} className={styles.form}>
-        <h2 className="text-xl">Create an Account</h2>
-        <div className="form-row">
-          <div className="form-group">
-            <label className={styles.formLabel} htmlFor="firstName">First Name</label>
-            <Input
-              id="firstName"
-              placeholder="John"
-              {...getFieldProps('firstName')}
-            />
-            {touched.firstName && errors.firstName && (
-              <span className="error-message">{errors.firstName}</span>
-            )}
-          </div>
+        <h2 className="text-lg">{t('common.createAccount')}</h2>
 
-          <div className="form-group">
-            <label className={styles.formLabel} htmlFor="lastName">Last Name</label>
-            <Input
-              id="lastName"
-              placeholder="Doe"
-              {...getFieldProps('lastName')}
-            />
-            {touched.lastName && errors.lastName && (
-              <span className="error-message">{errors.lastName}</span>
-            )}
-          </div>
-        </div>
-
-        <div className="form-group">
-          <label className={styles.formLabel} htmlFor="email">Email Address</label>
-          <Input
-            id="email"
-            type="email"
-            placeholder="john.doe@example.com"
-            {...getFieldProps('email')}
+        <div className={styles.formRow}>
+          <FormField
+            id="firstName"
+            label={t('forms.labels.firstName')}
+            fieldName="firstName"
+            placeholder={t('forms.placeholders.firstName')}
+            form={form}
+            required
           />
-          {touched.email && errors.email && (
-            <span className="error-message">{errors.email}</span>
-          )}
-        </div>
 
-        <div className="form-group">
-          <label className={styles.formLabel} htmlFor="phoneNumber">Phone Number (Optional)</label>
-          <Input
-            id="phoneNumber"
-            type="tel"
-            placeholder="+1 (555) 123-4567"
-            {...getFieldProps('phoneNumber')}
+          <FormField
+            id="lastName"
+            label={t('forms.labels.lastName')}
+            fieldName="lastName"
+            placeholder={t('forms.placeholders.lastName')}
+            form={form}
+            required
           />
-          {touched.phoneNumber && errors.phoneNumber && (
-            <span className="error-message">{errors.phoneNumber}</span>
-          )}
         </div>
 
-        <div className="form-group">
-          <label className={styles.formLabel} htmlFor="password">Password</label>
-          <Input
+        <FormField
+          id="email"
+          label={t('forms.labels.email')}
+          fieldName="email"
+          type="email"
+          placeholder={t('forms.placeholders.email')}
+          form={form}
+          required
+        />
+
+        <FormField
+          id="phoneNumber"
+          label={t('forms.labels.phoneNumber')}
+          fieldName="phoneNumber"
+          type="tel"
+          placeholder={t('forms.placeholders.phoneNumber')}
+          form={form}
+        />
+
+        <div className={styles.formRow}>
+          <FormField
             id="password"
+            label={t('forms.labels.password')}
+            fieldName="password"
             type="password"
-            {...getFieldProps('password')}
+            form={form}
+            placeholder="*******"
+            required
           />
-          {touched.password && errors.password && (
-            <span className="error-message">{errors.password}</span>
-          )}
-        </div>
 
-        <div className="form-group">
-          <label className={styles.formLabel} htmlFor="confirmPassword">Confirm Password</label>
-          <Input
+          <FormField
             id="confirmPassword"
+            label={t('forms.labels.confirmPassword')}
+            fieldName="confirmPassword"
             type="password"
-            {...getFieldProps('confirmPassword')}
+            form={form}
+            placeholder="*******"
+            required
           />
-          {touched.confirmPassword && errors.confirmPassword && (
-            <span className="error-message">{errors.confirmPassword}</span>
-          )}
         </div>
 
-        <div className="form-group checkbox-group">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              id="agreeToTerms"
-              {...getFieldProps('agreeToTerms')}
-            />
-            I agree to the terms and conditions
-          </label>
-          {touched.agreeToTerms && errors.agreeToTerms && (
-            <span className="error-message">{errors.agreeToTerms}</span>
-          )}
+        <div className={styles.checkboxGroup}>
+          <FormField
+            id="agreeToTerms"
+            label={t('forms.labels.agreeToTerms')}
+            fieldName="agreeToTerms"
+            form={form}
+            required
+          >
+            <label className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                id="agreeToTerms"
+                {...form.getFieldProps('agreeToTerms')}
+              />
+              <span>{t('forms.labels.agreeToTerms')}</span>
+            </label>
+          </FormField>
         </div>
 
-        <div className="form-actions">
+        <div className={styles.formActions}>
           <Button
             type="submit"
             disabled={isLoading || !isValid}
             fullWidth
           >
-            {isLoading ? "Creating Account..." : t("common.signUp")}
+            {isLoading ? t('forms.submission.loading') : t('common.signUp')}
           </Button>
         </div>
       </form>

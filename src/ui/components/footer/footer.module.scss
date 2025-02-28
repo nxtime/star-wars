@@ -1,0 +1,173 @@
+@use "@/styles/theme.scss" as *;
+
+.footer {
+  color: $text;
+  padding-top: $space-8;
+
+  &Content {
+    max-width: $desktop;
+    margin: 0 auto;
+    padding: 0 $space-4;
+  }
+
+  // Top section with navigation
+  &Nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-6;
+    padding-bottom: $space-8;
+    border-bottom: 1px solid $surface0;
+
+    &Column {
+      flex: 1;
+      min-width: 160px;
+
+      @media (max-width: $small-tablet) {
+        flex-basis: calc(50% - $space-6);
+      }
+
+      @media (max-width: $mobile) {
+        flex-basis: 100%;
+      }
+    }
+
+    &Title {
+      color: $subtext0;
+      font-size: $text-sm;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: $space-3;
+    }
+
+    &List {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: $space-2;
+      }
+    }
+
+    &Link {
+      color: $text;
+      text-decoration: none;
+      font-size: $text-sm;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $mauve;
+      }
+    }
+  }
+
+  // Middle section with logo and language
+  &Middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $space-6 0;
+    border-bottom: 1px solid $surface0;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: $space-4;
+      text-align: center;
+    }
+  }
+
+  &Logo {
+    &Text {
+      font-size: $text-xl;
+      font-weight: 700;
+      color: $mauve;
+    }
+  }
+
+  &Tagline {
+    margin-top: $space-1;
+    color: $subtext1;
+    font-size: $text-sm;
+  }
+
+  &Language {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+
+    &Label {
+      font-size: $text-sm;
+      color: $subtext1;
+    }
+
+    &Select {
+      background-color: $surface0;
+      color: $text;
+      border: 1px solid $overlay0;
+      padding: $space-1 $space-2;
+      border-radius: $radius-md;
+      font-size: $text-sm;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        border-color: $mauve;
+      }
+
+      option {
+        background-color: $surface0;
+      }
+    }
+  }
+
+  // Bottom section with socials and copyright
+  &Bottom {
+    padding: $space-6 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-4;
+  }
+
+  &Social {
+    display: flex;
+    gap: $space-4;
+
+    &Link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: $radius-full;
+      background-color: $surface0;
+      color: $text;
+      transition: all $transition-fast;
+
+      &:hover {
+        background-color: $surface1;
+        color: $mauve;
+        transform: translateY(-3px);
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &Copyright {
+    text-align: center;
+    color: $subtext1;
+    font-size: $text-xs;
+  }
+
+  &Disclaimer {
+    margin-top: $space-2;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-inline: auto;
+  }
+}

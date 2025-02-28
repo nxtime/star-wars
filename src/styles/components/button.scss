@@ -61,6 +61,14 @@
   &-disabled {
     opacity: 0.5;
     cursor: normal;
+
+    &.animate {
+      animation: none;
+    }
+
+    &:hover {
+      background-color: inherit;
+    }
   }
 }
 

@@ -33,9 +33,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h6,
+a,
+span,
+p {
+  color: var(--color, inherit);
+  font-size: var(--text-size, inherit);
+  font-weight: var(--font-weight, inherit);
 }
 
 /* Lists */
@@ -46,8 +50,11 @@ ol {
 
 /* Text-level semantics */
 a {
-  color: inherit;
   text-decoration: none;
+
+  // &:hover {
+  //   color: var(--subtext0);
+  // }
 }
 
 /* Forms */

@@ -1,4 +1,4 @@
-@use '../theme.scss' as *;
+@use "../theme.scss" as *;
 
 .input-wrapper {
   position: relative;
@@ -15,7 +15,9 @@
   background-color: $surface0;
   border: 1px solid $overlay0;
   border-radius: $radius-md;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:not(:disabled) {
     &:hover {
@@ -51,6 +53,11 @@
   &-full-width {
     width: 100%;
   }
+}
+
+.input[type="password"]::placeholder {
+  letter-spacing: 0.25em;
+  font-size: $text-lg;
 }
 
 .input-error-message {

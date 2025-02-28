@@ -1,0 +1,80 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  min-height: calc(100vh - var(--header-height));
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: $mobile;
+  background-color: $surface0;
+  padding: $space-8 $space-4;
+  border-radius: $radius-sm;
+
+  h2 {
+    margin-bottom: $space-4;
+  }
+}
+
+.formOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: $space-4;
+}
+
+.checkboxGroup {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+.formActions {
+  width: 100%;
+  margin-top: $space-2;
+  margin-bottom: $space-4;
+}
+
+.formFooter {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  margin-top: $space-2;
+
+  p {
+    color: $subtext1;
+    font-size: $text-sm;
+  }
+}
+
+.error {
+  width: 100%;
+  padding: $space-3;
+  margin-bottom: $space-4;
+  background-color: rgba($red, 0.1);
+  border-left: 3px solid $red;
+  color: $red;
+  font-size: $text-sm;
+  border-radius: $radius-sm;
+}

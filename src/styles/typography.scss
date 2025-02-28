@@ -11,6 +11,14 @@ $text-sizes: (
 $colors: (
   mauve: $mauve,
   flamingo: $flamingo,
+  surface0: $surface0,
+  surface1: $surface1,
+  surface2: $surface2,
+  overlay0: $overlay0,
+  overlay1: $overlay1,
+  base: $base,
+  crust: $crust,
+  mantle: $mantle,
 );
 
 @each $size, $value in $text-sizes {
