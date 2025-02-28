@@ -1,0 +1,143 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  padding: $space-6 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: $space-8;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: $space-3;
+  position: relative;
+  display: inline-block;
+  color: $text;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, $green, $blue);
+    border-radius: $radius-full;
+  }
+}
+
+.subtitle {
+  font-size: $text-lg;
+  color: $subtext1;
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-6;
+}
+
+.card {
+  background-color: $surface0;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+    .cardImage {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.cardImage {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center,
+        transparent 30%,
+        rgba(0, 0, 0, 0.3));
+  }
+}
+
+.cardContent {
+  padding: $space-4;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardName {
+  font-size: $text-xl;
+  margin-bottom: $space-2;
+  color: $text;
+}
+
+.cardDescription {
+  color: $subtext1;
+  margin-bottom: $space-4;
+  flex: 1;
+}
+
+.cardDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-2;
+  background-color: $surface1;
+  padding: $space-3;
+  border-radius: $radius-md;
+}
+
+.cardDetail {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+
+  &:last-child {
+    grid-column: span 2;
+  }
+}
+
+.cardDetailLabel {
+  font-size: $text-xs;
+  color: $subtext0;
+  font-weight: 500;
+}
+
+@media (max-width: $tablet) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: $mobile) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}

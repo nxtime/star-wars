@@ -13,7 +13,6 @@ const SignIn = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
 
-  // Create form config with translations
   const signInFormConfig = createSignInFormConfig(t);
 
   const form = useForm<SignInFormValues>(signInFormConfig);
@@ -32,7 +31,6 @@ const SignIn = () => {
         email: formValues.email,
         password: formValues.password
       });
-      // If the login is successful, the auth context will update isAuthenticated
     } catch (error) {
       setAuthError(error instanceof Error ? error.message : t('forms.errors.loginFailed'));
     } finally {

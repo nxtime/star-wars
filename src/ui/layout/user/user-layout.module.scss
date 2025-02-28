@@ -1,0 +1,26 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  // display: flex;
+  // flex-direction: column;
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  padding-inline: $space-4;
+  margin-inline: auto;
+
+  width: 100%;
+  max-width: $desktop;
+}
+
+.content {
+  flex: 1;
+  padding: $space-6 $space-4;
+  max-width: $desktop;
+  margin: 0 auto;
+  width: 100%;
+
+  // Subtle Star Wars themed background pattern
+}

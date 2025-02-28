@@ -1,0 +1,227 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  background-color: rgba($crust, 0.8);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  margin-top: $space-6;
+  color: $text;
+  font-size: $text-lg;
+  animation: fadeInOut 2s infinite;
+}
+
+.droid {
+  position: relative;
+  width: 80px;
+  height: 140px;
+  animation: walk 2s infinite;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  background-color: $blue;
+  border: 2px solid $text;
+  border-radius: 50% 50% 25% 25% / 55% 55% 45% 45%;
+  z-index: 2;
+  animation: headTilt 2s infinite;
+}
+
+.eye {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 12px;
+  height: 12px;
+  background-color: $sapphire;
+  border-radius: 50%;
+  border: 1px solid $text;
+  animation: blink 4s infinite;
+}
+
+.detail {
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  width: 30px;
+  height: 6px;
+  background-color: $surface0;
+  border-radius: 3px;
+  border: 1px solid rgba($text, 0.5);
+}
+
+.body {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 80px;
+  background-color: $sapphire;
+  border: 2px solid $text;
+  border-radius: 30% 30% 45% 45% / 20% 20% 80% 80%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.detail1,
+.detail2,
+.detail3 {
+  position: absolute;
+  height: 10px;
+  background-color: $surface1;
+  border: 1px solid rgba($text, 0.5);
+  border-radius: 2px;
+}
+
+.detail1 {
+  top: 15px;
+  left: 10px;
+  width: 20px;
+  animation: light 1.5s infinite;
+}
+
+.detail2 {
+  top: 35px;
+  right: 10px;
+  width: 15px;
+  animation: light 2s infinite 0.5s;
+}
+
+.detail3 {
+  bottom: 15px;
+  left: 25px;
+  width: 25px;
+  animation: light 1s infinite 0.25s;
+}
+
+.legs {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leg1,
+.leg2,
+.leg3 {
+  position: relative;
+  width: 12px;
+  height: 30px;
+  background-color: $overlay1;
+  border: 2px solid $text;
+  border-radius: 4px;
+  animation: legMove 1s infinite;
+}
+
+.leg1 {
+  animation-delay: 0.25s;
+}
+
+.leg2 {
+  animation-delay: 0s;
+}
+
+.leg3 {
+  animation-delay: 0.5s;
+}
+
+@keyframes walk {
+
+  0%,
+  100% {
+    transform: translateX(-15px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(5deg);
+  }
+}
+
+@keyframes headTilt {
+
+  0%,
+  100% {
+    transform: translateX(-50%) rotate(-8deg);
+  }
+
+  50% {
+    transform: translateX(-50%) rotate(8deg);
+  }
+}
+
+@keyframes legMove {
+
+  0%,
+  100% {
+    height: 30px;
+    transform: translateY(0);
+  }
+
+  50% {
+    height: 25px;
+    transform: translateY(5px);
+  }
+}
+
+@keyframes light {
+
+  0%,
+  100% {
+    background-color: $surface1;
+  }
+
+  50% {
+    background-color: $sapphire;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  48%,
+  52%,
+  100% {
+    background-color: $sapphire;
+    box-shadow: 0 0 8px rgba($blue, 0.8);
+  }
+
+  50% {
+    background-color: $mantle;
+    box-shadow: none;
+  }
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

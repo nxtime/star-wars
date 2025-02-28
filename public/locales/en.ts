@@ -7,6 +7,20 @@ export const EnglishTranslation = {
     createAnotherAccount: 'Sign Up Another User',
     submitted: 'Submitted'
   },
+  errors: {
+    notFound: {
+      title: 'Page Not Found',
+      message: 'The page you are looking for does not exist or has been moved.'
+    },
+    boundary: {
+      title: 'Something Went Wrong',
+      message: 'A disturbance in the Force has occurred. We\'ve dispatched a team of Jedi to investigate.'
+    },
+    actions: {
+      tryAgain: 'Try Again',
+      goHome: 'Return to Home'
+    },
+  },
   footer: {
     navigation: {
       title: 'Navigation',

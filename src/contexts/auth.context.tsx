@@ -2,9 +2,9 @@ import { createContext, FC, PropsWithChildren, useReducer } from "react";
 
 import { authReducer } from "../reducers/auth-reducer.reducer";
 import { AuthActionType, AuthLoginDto, AuthState } from "../models/auth.model";
-import type { User, UserCredentials } from "../models/user.model";
+import { UserStatus, User, UserCredentials } from "../models/user.model";
 
-import { api } from "@/utils/api.util";
+import { Theme } from "@/models/theme.model";
 
 interface AuthContextType extends AuthState {
   login(credentials: { email: string; password: string }): Promise<void>;
@@ -31,7 +31,29 @@ const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
       const isLoginValid = credentials.email === "admin@email.com" && !!credentials.password;
       if (!isLoginValid) throw new Error("Login Invalid!");
 
-      const { data } = await api.get<AuthLoginDto>("/login");
+      // const { data } = await api.get<AuthLoginDto>("/login");
+      //
+      const data: AuthLoginDto = {
+        user: {
+          email: "marcos@email.com",
+          createdAt: new Date(),
+          firstName: "Marcos",
+          language: "en",
+          lastName: "Paulo",
+          username: "nxtime",
+          social: {},
+          notifications: {
+            email: false,
+            desktop: false,
+            push: false
+          },
+          status: UserStatus.ACTIVE,
+          theme: Theme.SYSTEM,
+          timezone: "BRZ",
+          id: "23123213",
+          updatedAt: new Date()
+        }
+      }
 
       dispatch({
         type: AuthActionType.LOGIN_SUCCESS,

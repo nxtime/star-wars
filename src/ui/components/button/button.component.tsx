@@ -6,6 +6,7 @@ import { buttonVariants } from './button-variants';
 import { Routes } from '@/models/routes.model';
 import { useRouter } from '@/hooks/use-router.hook';
 import "@/styles/components/button.scss";
+import { Link } from '..';
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonVariants> & {
@@ -61,14 +62,14 @@ const Button = ({
     }
 
     return (
-      <a
+      <Link
+        to={to}
         className={classes}
-        href={to}
         onClick={handleAnchorClick}
         {...props as HTMLElementProps<"a">}
       >
         {children}
-      </a>
+      </Link>
     )
   }
 
