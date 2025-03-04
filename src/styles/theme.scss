@@ -56,6 +56,8 @@
   /* 30px */
   --text-4xl: 2.25rem;
   /* 36px */
+  --text-6xl: 2.5rem;
+  /* 40px */
 
   // /* Font Sizes - Following 8pt scale */
   // --text-xs: 0.75rem;
@@ -205,6 +207,9 @@ $text-sm: var(--text-sm);
 $text-md: var(--text-base);
 $text-lg: var(--text-lg);
 $text-xl: var(--text-xl);
+$text-2xl: var(--text-2xl);
+$text-4xl: var(--text-4xl);
+$text-6xl: var(--text-6xl);
 
 // Transitions
 $transition-fast: var(--transition-fast);

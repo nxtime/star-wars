@@ -1,0 +1,9 @@
+{
+  "/api/*": "/$1",
+  "/api/characters/:id/homeworld": "/planets/:homeWorldId",
+  "/api/characters/:id/vehicles": "/vehicles?pilots_like=:id",
+  "/api/characters/:id/starships": "/starships?pilots_like=:id",
+  "/api/characters/force-users": "/characters?isForceUser=true",
+  "/api/planets/:id/residents": "/characters?homeWorldId=:id",
+  "/api/affiliations/:id/members": "/characters?affiliationId=:id"
+}

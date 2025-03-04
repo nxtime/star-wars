@@ -5,6 +5,7 @@ import { createRoot } from "react-dom/client";
 import Router from "./routes/routes.route";
 
 import { AuthProvider, RouterProvider, I18nProvider } from "@/contexts";
+import ModalProvider from "./contexts/modal.context";
 import "@/styles/global.scss";
 import { EnglishTranslation } from "@locales/en";
 
@@ -19,7 +20,9 @@ if (DOM_CONTAINER) {
         <QueryClientProvider client={queryClient}>
           <AuthProvider>
             <RouterProvider>
-              <Router />
+              <ModalProvider>
+                <Router />
+              </ModalProvider>
             </RouterProvider>
           </AuthProvider>
         </QueryClientProvider>

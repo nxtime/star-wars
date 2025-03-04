@@ -1,0 +1,128 @@
+[
+  {
+    "id": 0,
+    "name": "Independent",
+    "type": "Other",
+    "era": ["All"],
+    "leader": [],
+    "headquarters": [],
+    "description": "Not affiliated with any major galactic organization",
+    "imagePlaceholder": "#777777"
+  },
+  {
+    "id": 1,
+    "name": "Rebel Alliance",
+    "type": "Military/Political",
+    "era": ["Galactic Civil War"],
+    "leader": [3, 22],
+    "headquarters": [31, 18],
+    "description": "Alliance to Restore the Republic, a resistance movement formed to oppose the Galactic Empire",
+    "imagePlaceholder": "#ff4500",
+    "followed_by": [7],
+    "opposed": [2]
+  },
+  {
+    "id": 2,
+    "name": "Galactic Empire",
+    "type": "Government/Military",
+    "era": ["Imperial Era", "Galactic Civil War"],
+    "leader": [8],
+    "headquarters": [9],
+    "description": "Autocratic regime that replaced the Galactic Republic and ruled the galaxy",
+    "imagePlaceholder": "#000000",
+    "preceded_by": [3],
+    "followed_by": [6],
+    "opposed": [1]
+  },
+  {
+    "id": 3,
+    "name": "Jedi Order",
+    "type": "Religious/Peacekeeping",
+    "era": ["Pre-Republic Era", "High Republic Era", "Fall of the Republic", "New Republic Era"],
+    "leader": [6, 7],
+    "headquarters": [9],
+    "description": "Order of Force-sensitive guardians who served as peacekeepers in the Galactic Republic",
+    "imagePlaceholder": "#4682b4",
+    "opposed": [5]
+  },
+  {
+    "id": 4,
+    "name": "Resistance",
+    "type": "Military",
+    "era": ["New Republic Era", "First Order–Resistance War"],
+    "leader": [3, 15],
+    "headquarters": [30, 31],
+    "description": "Military force founded by Leia Organa to counter the threat of the First Order",
+    "imagePlaceholder": "#ffa500",
+    "preceded_by": [7],
+    "opposed": [6]
+  },
+  {
+    "id": 5,
+    "name": "Sith Order",
+    "type": "Religious",
+    "era": ["Old Republic Era", "Fall of the Republic", "Imperial Era"],
+    "leader": [8],
+    "headquarters": [25],
+    "description": "Ancient organization of Force-sensitive beings who used the dark side of the Force",
+    "imagePlaceholder": "#8b0000",
+    "opposed": [3]
+  },
+  {
+    "id": 6,
+    "name": "First Order",
+    "type": "Military/Political",
+    "era": ["New Republic Era", "First Order–Resistance War"],
+    "leader": [13, 25],
+    "headquarters": [40],
+    "description": "Military junta inspired by the Galactic Empire that rose from its remnants",
+    "imagePlaceholder": "#2f4f4f",
+    "preceded_by": [2],
+    "opposed": [4, 7]
+  },
+  {
+    "id": 7,
+    "name": "New Republic",
+    "type": "Government",
+    "era": ["New Republic Era"],
+    "leader": [3, 23],
+    "headquarters": [35, 36],
+    "description": "Democratic government formed after the fall of the Galactic Empire",
+    "imagePlaceholder": "#6495ed",
+    "preceded_by": [1],
+    "followed_by": [4],
+    "opposed": [6]
+  },
+  {
+    "id": 8,
+    "name": "Galactic Republic",
+    "type": "Government",
+    "era": ["High Republic Era", "Fall of the Republic"],
+    "leader": [21],
+    "headquarters": [9],
+    "description": "Democratic union that governed the galaxy before the rise of the Empire",
+    "imagePlaceholder": "#b22222",
+    "followed_by": [2]
+  },
+  {
+    "id": 9,
+    "name": "Trade Federation",
+    "type": "Commercial",
+    "era": ["Fall of the Republic"],
+    "leader": [26],
+    "headquarters": [39],
+    "description": "Vast commercial organization that controlled trade routes and possessed substantial military power",
+    "imagePlaceholder": "#2e8b57",
+    "opposed": [8]
+  },
+  {
+    "id": 10,
+    "name": "Bounty Hunters' Guild",
+    "type": "Organization",
+    "era": ["Imperial Era", "New Republic Era"],
+    "leader": [],
+    "headquarters": [],
+    "description": "Organization that regulated bounty hunting throughout the galaxy",
+    "imagePlaceholder": "#8b4513"
+  }
+]

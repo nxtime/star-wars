@@ -1,0 +1,83 @@
+@use "@/styles/theme.scss" as *;
+
+.pagination {
+  margin-top: $space-6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  &Controls {
+    display: flex;
+    align-items: center;
+    gap: $space-2;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &Button {
+    min-width: 80px;
+
+    @media (max-width: $mobile) {
+      min-width: 60px;
+      font-size: $text-xs;
+    }
+  }
+
+  &Pages {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    margin: 0 $space-2;
+  }
+
+  &Page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: $radius-md;
+    background-color: $surface0;
+    color: $text;
+    font-size: $text-sm;
+    border: 1px solid $overlay0;
+    transition: all $transition-fast;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      background-color: $surface1;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &Active {
+      background-color: $mauve;
+      color: $crust;
+      border-color: $mauve;
+
+      &:hover {
+        background-color: $mauve;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      width: 32px;
+      height: 32px;
+      font-size: $text-xs;
+    }
+  }
+
+  &Ellipsis {
+    color: $subtext1;
+    margin: 0 $space-1;
+  }
+
+  &Info {
+    margin-top: $space-3;
+    font-size: $text-sm;
+    color: $subtext1;
+  }
+}

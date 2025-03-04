@@ -1,0 +1,170 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: $text;
+}
+
+.header {
+  display: flex;
+  gap: $space-6;
+  margin-bottom: $space-8;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: $radius-lg;
+  background-color: $overlay0;
+  flex-shrink: 0;
+
+  background-size: 70%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 $space-2;
+  color: $text;
+}
+
+.role {
+  font-size: $text-lg;
+  color: $subtext0;
+  margin: 0 0 $space-4;
+}
+
+.badges {
+  display: flex;
+  gap: $space-2;
+  flex-wrap: wrap;
+}
+
+.statusBadge,
+.forceBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-1 $space-3;
+  border-radius: $radius-full;
+  font-size: $text-xs;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.statusAlive {
+  background-color: rgba($green, 0.2);
+  color: $green;
+}
+
+.statusDeceased {
+  background-color: rgba($red, 0.2);
+  color: $red;
+}
+
+.statusUnknown {
+  background-color: rgba($yellow, 0.2);
+  color: $yellow;
+}
+
+.forceLight {
+  background-color: rgba($blue, 0.2);
+  color: $blue;
+}
+
+.forceDark {
+  background-color: rgba($red, 0.2);
+  color: $red;
+}
+
+.forceNeutral {
+  background-color: rgba($peach, 0.2);
+  color: $peach;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-6;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: $text-lg;
+  font-weight: 600;
+  color: $text;
+  margin: 0 0 $space-4;
+  padding-bottom: $space-2;
+  border-bottom: 1px solid $surface1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: $space-4;
+}
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+}
+
+.label {
+  font-size: $text-xs;
+  color: $subtext0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.value {
+  font-size: $text-md;
+  color: $text;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-2;
+}
+
+.tag {
+  background-color: $surface1;
+  color: $text;
+  padding: $space-1 $space-3;
+  border-radius: $radius-full;
+  font-size: $text-sm;
+}
+
+.linkButton {
+  align-self: flex-start;
+  padding: 0;
+  color: $blue;
+  min-height: unset;
+  height: auto;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  margin-top: $space-6;
+  display: flex;
+  justify-content: flex-end;
+}

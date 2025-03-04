@@ -6,14 +6,15 @@ import { useRouter } from "@/hooks/use-router.hook";
 interface LinkProps extends PropsWithChildren {
   to: Routes;
   className?: string;
+  params?: Record<string, any>
 }
 
-const Link: FC<LinkProps> = ({ to, children, className }) => {
+const Link: FC<LinkProps> = ({ to, children, className, params }) => {
   const { goto } = useRouter();
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    goto(to);
+    goto(to, params);
   };
 
   return (

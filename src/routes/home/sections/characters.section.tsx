@@ -3,23 +3,24 @@ import { Routes } from "@/models/routes.model";
 import { useTranslate } from "@/hooks/use-translate.hook";
 import styles from "./sections.module.scss";
 import { landingCharactersData } from "./constants/characters.constant";
+import { Character } from "@/models/entity.model";
+import { getImage } from "@/utils/fetch.util";
+import { formatArrayItems } from "@/utils/entity.util";
 
-interface CharacterCardProps {
-  name: string;
-  role: string;
-  affiliation: string;
-  species: string;
-  imagePlaceholder: string;
-}
-
-const CharacterCard = ({ name, role, affiliation, species, imagePlaceholder }: CharacterCardProps) => (
+const CharacterCard = ({ name, role, affiliations, imageUrl, species, imagePlaceholder }: Character) => (
   <div className={styles.charactersCard}>
-    <div className={styles.charactersCardImage} style={{ backgroundColor: imagePlaceholder }} />
+    <div
+      className={styles.charactersCardImage}
+      style={{
+        backgroundColor: imagePlaceholder,
+        backgroundImage: `url(${getImage(imageUrl, "characters", true)})`,
+      }}
+    />
     <div className={styles.charactersCardContent}>
       <h3 className={styles.charactersCardName}>{name}</h3>
       <div className={styles.charactersCardInfo}>
         <span>Role: {role}</span>
-        <span>Affiliation: {affiliation}</span>
+        <span>Affiliation: {formatArrayItems(affiliations)}</span>
         <span>Species: {species}</span>
       </div>
     </div>

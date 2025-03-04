@@ -5,7 +5,10 @@ export const EnglishTranslation = {
     signUp: 'Sign Up',
     createAccount: 'Create Account',
     createAnotherAccount: 'Sign Up Another User',
-    submitted: 'Submitted'
+    submitted: 'Submitted',
+    unknown: "Unknown"
+  },
+  unit: {
   },
   errors: {
     notFound: {
@@ -27,6 +30,8 @@ export const EnglishTranslation = {
       home: 'Home',
       characters: 'Characters',
       planets: 'Planets',
+      starships: 'Starships',
+      vehicles: 'Vehicles',
       timeline: 'Timeline',
       forum: 'Community'
     },
@@ -170,5 +175,12 @@ export const EnglishTranslation = {
     errors: {
       loginFailed: 'Login failed. Please check your credentials and try again.'
     }
-  }
+  },
+  pagination: {
+    first: 'First',
+    prev: 'Previous',
+    next: 'Next',
+    last: 'Last',
+    pageInfo: 'Page {{current}} of {{total}}'
+  },
 };

@@ -2,40 +2,81 @@ import { createContext, FC, PropsWithChildren, useEffect, useState } from "react
 
 import { Routes } from "../models/routes.model";
 
-type RouteContextType = {
-  route: Routes;
-  goto(route: Routes): void;
+interface URLParams {
+  [key: string]: string;
 }
 
-const pathToRoute: Record<string, keyof typeof Routes> = Object.entries(Routes).reduce(
-  (acc, [route, path]) => ({
-    ...acc,
-    [path]: route as keyof typeof Routes,
-  }),
-  {} as Record<string, keyof typeof Routes>
-);
+type RouteContextType = {
+  route: Routes;
+  params: URLParams;
+  goto(route: Routes, additionalParams?: Record<string, any>): void;
+  setParam: (key: string, value: string) => void;
+  removeParam: (key: string) => void;
+  clearParams: () => void;
+}
 
-const getCurrentRoute = (): Routes => {
+const getCurrentRoute = () => {
   const path = window.location.pathname;
+  for (const [routeName, routePath] of Object.entries(Routes)) {
+    if (routePath === path) {
+      return Routes[routeName as keyof typeof Routes];
+    }
+  }
+  return Routes.HOME;
+}
 
-  return Routes[pathToRoute[path]] || Routes.HOME;
-};
+const getURLParams = () => {
+  const searchParams = new URLSearchParams(window.location.search);
+  const params: URLParams = {};
+
+  for (const [key, value] of searchParams.entries()) {
+    params[key] = value;
+  }
+
+  return params;
+}
 
 export const RouterContext = createContext<RouteContextType | null>(null);
 
 const RouterProvider: FC<PropsWithChildren> = ({ children }) => {
   const [route, setRoute] = useState<Routes>(getCurrentRoute());
+  const [params, setParams] = useState<URLParams>(getURLParams());
 
-  const goto = (newRoute: Routes) => {
-    const path = newRoute;
+  const updateURL = (newRoute: Routes, newParams: URLParams = {}) => {
+    const currentParams = newParams;
+    const searchParams = new URLSearchParams();
 
-    window.history.pushState({}, "", path);
+    for (const [key, value] of Object.entries(currentParams)) {
+      searchParams.set(key, value);
+    }
+
+    const queryString = searchParams.toString();
+    const newPath = queryString ? `${newRoute}?${queryString}` : newRoute;
+
+    window.history.pushState({}, "", newPath);
     setRoute(newRoute);
+    setParams(currentParams);
+  }
+
+  const setParam = (key: string, value: string) => {
+    const newParams = { ...params, [key]: value };
+    updateURL(route, newParams);
+  };
+
+  const removeParam = (key: string) => {
+    const newParams = { ...params };
+    delete newParams[key];
+    updateURL(route, newParams);
+  };
+
+  const clearParams = () => {
+    updateURL(route, {});
   };
 
   useEffect(() => {
     const handlePopState = () => {
       setRoute(getCurrentRoute());
+      setParams(getURLParams());
     };
 
     window.addEventListener("popstate", handlePopState);
@@ -47,7 +88,11 @@ const RouterProvider: FC<PropsWithChildren> = ({ children }) => {
 
   const value = {
     route,
-    goto,
+    params,
+    setParam,
+    removeParam,
+    clearParams,
+    goto: updateURL
   };
 
   return (

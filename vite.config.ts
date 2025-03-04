@@ -1,33 +1,38 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
-import path from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   css: {
     preprocessorOptions: {
-      scss: {
-
-      }
-    }
+      scss: {},
+    },
   },
   server: {
     host: "0.0.0.0",
-    allowedHosts: ["starwars.marcospaulo.dev.br"]
+    allowedHosts: ["starwars.marcospaulo.dev.br", "my.server"],
+    proxy: {
+      "/api": {
+        target: "http://localhost:3001",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@contexts': path.resolve(__dirname, './src/contexts'),
-      '@models': path.resolve(__dirname, './src/models'),
-      '@hooks': path.resolve(__dirname, './src/hooks'),
-      '@reducers': path.resolve(__dirname, './src/reducers'),
-      '@routes': path.resolve(__dirname, './src/routes'),
-      '@styles': path.resolve(__dirname, './src/styles'),
-      '@ui': path.resolve(__dirname, './src/ui'),
-      '@utils': path.resolve(__dirname, './src/utils'),
-      '@locales': path.resolve(__dirname, './public/locales')
-    }
-  }
-})
+      "@": path.resolve(__dirname, "./src"),
+      "@contexts": path.resolve(__dirname, "./src/contexts"),
+      "@models": path.resolve(__dirname, "./src/models"),
+      "@hooks": path.resolve(__dirname, "./src/hooks"),
+      "@reducers": path.resolve(__dirname, "./src/reducers"),
+      "@routes": path.resolve(__dirname, "./src/routes"),
+      "@styles": path.resolve(__dirname, "./src/styles"),
+      "@ui": path.resolve(__dirname, "./src/ui"),
+      "@utils": path.resolve(__dirname, "./src/utils"),
+      "@locales": path.resolve(__dirname, "./public/locales"),
+    },
+  },
+});

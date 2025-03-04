@@ -3,24 +3,19 @@ import { Routes } from "@/models/routes.model";
 import { useTranslate } from "@/hooks/use-translate.hook";
 import styles from "./sections.module.scss";
 import { landingPlanetsData } from "./constants/planets.constant";
+import { getImage } from "@/utils/fetch.util";
+import { Planet } from "@/models/entity.model";
 
-interface PlanetCardProps {
-  name: string;
-  description: string;
-  climate: string;
-  terrain: string;
-  population: string;
-  colorHex: string;
-}
-
-const PlanetCard = ({ name, description, climate, terrain, population, colorHex }: PlanetCardProps) => {
+const PlanetCard = ({ name, climate, terrain, imageUrl, imagePlaceholder, population }: Planet) => {
   const { t } = useTranslate();
 
   return (
     <div className={styles.planetsCard}>
-      <div className={styles.planetsCardImage} style={{ backgroundColor: colorHex }} />
+      <div className={styles.planetsCardImage} style={{
+        backgroundColor: imagePlaceholder,
+        backgroundImage: `url(${getImage(imageUrl, "planets", true)})`
+      }} />
       <h3 className={styles.planetsCardName}>{name}</h3>
-      <p className={styles.planetsCardDescription}>{description}</p>
       <div className={styles.planetsCardStats}>
         <div className={styles.planetsCardStatsItem}>
           <span>{t("landing.planets.cards.climate")}</span>

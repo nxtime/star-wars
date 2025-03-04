@@ -1,0 +1,145 @@
+[
+  {
+    "id": 0,
+    "name": "Unknown",
+    "classification": "Unknown",
+    "designation": "Unknown",
+    "average_height": "Unknown",
+    "average_lifespan": "Unknown",
+    "language": "Unknown",
+    "homeWorldId": 0,
+    "imagePlaceholder": "#555555"
+  },
+  {
+    "id": 1,
+    "name": "Human",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "180",
+    "average_lifespan": "120",
+    "language": "Galactic Basic",
+    "homeWorldId": 0,
+    "imagePlaceholder": "#c4a890"
+  },
+  {
+    "id": 2,
+    "name": "Droid",
+    "classification": "Artificial",
+    "designation": "Sentient",
+    "average_height": "Varies",
+    "average_lifespan": "Indefinite",
+    "language": "Binary",
+    "homeWorldId": 0,
+    "imagePlaceholder": "#8c8c8c"
+  },
+  {
+    "id": 3,
+    "name": "Wookiee",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "210",
+    "average_lifespan": "400",
+    "language": "Shyriiwook",
+    "homeWorldId": 14,
+    "imagePlaceholder": "#6c5434"
+  },
+  {
+    "id": 4,
+    "name": "Rodian",
+    "classification": "Reptilian",
+    "designation": "Sentient",
+    "average_height": "170",
+    "average_lifespan": "89",
+    "language": "Rodese",
+    "homeWorldId": 23,
+    "imagePlaceholder": "#5fa054"
+  },
+  {
+    "id": 5,
+    "name": "Hutt",
+    "classification": "Gastropod",
+    "designation": "Sentient",
+    "average_height": "300",
+    "average_lifespan": "1000",
+    "language": "Huttese",
+    "homeWorldId": 24,
+    "imagePlaceholder": "#8c7351"
+  },
+  {
+    "id": 6,
+    "name": "Yoda's species",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "66",
+    "average_lifespan": "900",
+    "language": "Galactic Basic",
+    "homeWorldId": 28,
+    "imagePlaceholder": "#7a8b69"
+  },
+  {
+    "id": 7,
+    "name": "Twi'lek",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "200",
+    "average_lifespan": "80",
+    "language": "Twi'leki",
+    "homeWorldId": 37,
+    "imagePlaceholder": "#7091b8"
+  },
+  {
+    "id": 8,
+    "name": "Mon Calamari",
+    "classification": "Amphibian",
+    "designation": "Sentient",
+    "average_height": "175",
+    "average_lifespan": "100",
+    "language": "Mon Calamarian",
+    "homeWorldId": 31,
+    "imagePlaceholder": "#c87137"
+  },
+  {
+    "id": 9,
+    "name": "Ewok",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "100",
+    "average_lifespan": "65",
+    "language": "Ewokese",
+    "homeWorldId": 7,
+    "imagePlaceholder": "#9c7c5c"
+  },
+  {
+    "id": 10,
+    "name": "Sullustan",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "180",
+    "average_lifespan": "75",
+    "language": "Sullustese",
+    "homeWorldId": 33,
+    "imagePlaceholder": "#857161"
+  },
+  {
+    "id": 11,
+    "name": "Zabrak",
+    "classification": "Mammal",
+    "designation": "Sentient",
+    "average_height": "180",
+    "average_lifespan": "130",
+    "language": "Galactic Basic",
+    "homeWorldId": 45,
+    "imagePlaceholder": "#b05c5c"
+  },
+  {
+    "id": 12,
+    "name": "Gungan",
+    "classification": "Amphibian",
+    "designation": "Sentient",
+    "average_height": "190",
+    "average_lifespan": "90",
+    "language": "Gungan Basic",
+    "homeWorldId": 8,
+    "imagePlaceholder": "#8c9c51"
+  }
+]

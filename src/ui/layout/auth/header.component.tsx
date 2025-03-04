@@ -19,6 +19,36 @@ const Header = () => {
       >
         {t('common.title')}
       </Button>
+      <nav className={styles.navigation}>
+        <Button
+          to={Routes.CHARACTER}
+          intent="ghost"
+          size="sm"
+        >
+          {t('footer.navigation.characters')}
+        </Button>
+        <Button
+          to={Routes.PLANET}
+          intent="ghost"
+          size="sm"
+        >
+          {t('footer.navigation.planets')}
+        </Button>
+        <Button
+          to={Routes.VEHICLE}
+          intent="ghost"
+          size="sm"
+        >
+          {t('footer.navigation.vehicles')}
+        </Button>
+        <Button
+          to={Routes.STARSHIP}
+          intent="ghost"
+          size="sm"
+        >
+          {t('footer.navigation.starships')}
+        </Button>
+      </nav>
       <div className={styles.actions}>
         <Button
           size="sm"

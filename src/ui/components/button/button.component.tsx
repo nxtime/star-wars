@@ -14,6 +14,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
     to?: Routes; // Optional prop to specify a route to navigate to
   } & {
     onClick?: (a?: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    params?: Record<string, number | string | boolean | null>
   }
 
 type HTMLElementProps<T extends keyof JSX.IntrinsicElements> = React.ComponentPropsWithoutRef<T>;
@@ -25,6 +26,7 @@ const Button = ({
   size,
   text,
   animation,
+  params,
   speed,
   timing,
   fullWidth,
@@ -57,13 +59,12 @@ const Button = ({
       event.preventDefault();
 
       if (onClick) onClick();
-
-      router.goto(to);
     }
 
     return (
       <Link
         to={to}
+        params={params}
         className={classes}
         onClick={handleAnchorClick}
         {...props as HTMLElementProps<"a">}

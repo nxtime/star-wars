@@ -128,7 +128,7 @@ export default tseslint.config(
       'no-var': 'error',
       'no-param-reassign': 'error',
       'no-unused-expressions': 'error',
-      'camelcase': ['error', { properties: 'never' }],
+      // 'camelcase': ['error', { properties: 'never' }],
       'spaced-comment': ['error', 'always'],
       'eqeqeq': ['error', 'always'],
 

@@ -5,20 +5,22 @@ import { useRouter } from "@/hooks/use-router.hook";
 import AuthLayout from "@/ui/layout/auth/auth-layout.component";
 import UserLayout from "@/ui/layout/user/user-layout.component";
 
-// Routes
 const Home = lazy(() => import("@/routes/home/home.route"));
 const SignUp = lazy(() => import("@/routes/sign-up/sign-up.route"));
 const SignIn = lazy(() => import("@/routes/sign-in/sign-in.route"));
-const Character = lazy(() => import("@/routes/character/character.route"));
-const Planet = lazy(() => import("@/routes/planet/planet.route"));
+const Entity = lazy(() => import("@/routes/entity/entity.route"));
 const NotFound = lazy(() => import("@/routes/not-found/not-found.route"));
 
-const routes: Partial<Record<Routes, React.LazyExoticComponent<() => JSX.Element>>> = {
+const routes: Partial<
+  Record<Routes, React.LazyExoticComponent<() => JSX.Element>>
+> = {
   [Routes.HOME]: Home,
   [Routes.SIGN_UP]: SignUp,
   [Routes.SIGN_IN]: SignIn,
-  [Routes.CHARACTER]: Character,
-  [Routes.PLANET]: Planet,
+  [Routes.CHARACTER]: Entity,
+  [Routes.PLANET]: Entity,
+  [Routes.VEHICLE]: Entity,
+  [Routes.STARSHIP]: Entity
 };
 
 const Router = () => {

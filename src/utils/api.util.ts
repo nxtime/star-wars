@@ -2,12 +2,12 @@ import axios from "axios";
 
 import { ApiStatus } from "@/models/api.model";
 
-const SERVER_URL = "http://192.168.1.19:7979";
+const SERVER_URL = "http://192.168.1.19:5173/api";
 
 const baseURL = SERVER_URL;
 
 export const api = axios.create({
-  baseURL
+  baseURL,
 });
 
 api.interceptors.request.use((config) => {
@@ -15,7 +15,9 @@ api.interceptors.request.use((config) => {
 });
 
 api.interceptors.response.use((response) => {
-  if ([ApiStatus.BAD_REQUEST, ApiStatus.UNAUTHORIZED].includes(response.status)) {
+  if (
+    [ApiStatus.BAD_REQUEST, ApiStatus.UNAUTHORIZED].includes(response.status)
+  ) {
     return Promise.reject("Login not Authorized");
   }
 

@@ -1,0 +1,76 @@
+@use "@/styles/theme.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: $space-4;
+  max-width: $desktop;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: $space-6;
+  text-align: center;
+}
+
+.title {
+  font-size: $text-6xl;
+  margin-bottom: $space-3;
+  position: relative;
+  display: inline-block;
+  color: $text;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, var(--green), var(--blue));
+    border-radius: var(--radius-full);
+  }
+}
+
+.subtitle {
+  font-size: $text-md;
+  color: $subtext1;
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-16;
+  font-size: $text-lg;
+  color: $subtext0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $space-4;
+  margin-bottom: $space-8;
+}
+
+// Responsive styles
+@media (max-width: $tablet) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: $mobile) {
+  .container {
+    padding: $space-3;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

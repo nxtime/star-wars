@@ -1,0 +1,1953 @@
+{
+  "characters": [
+    {
+      "id": "1",
+      "name": "Luke Skywalker",
+      "role": "Jedi Knight",
+      "affiliationId": "1",
+      "affiliations": [
+        "Rebel Alliance",
+        "Jedi Order"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "1",
+      "homeWorld": "Tatooine",
+      "birthYear": "19 BBY",
+      "vehicles": [
+        "5",
+        "14"
+      ],
+      "starships": [
+        "12",
+        "22"
+      ],
+      "weapons": [
+        "Lightsaber",
+        "Blaster"
+      ],
+      "imagePlaceholder": "#4d7298",
+      "imageUrl": "luke_skywalker.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "2",
+      "name": "Darth Vader",
+      "role": "Sith Lord",
+      "affiliationId": "3",
+      "affiliations": [
+        "Galactic Empire",
+        "Sith Order"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "1",
+      "homeWorld": "Tatooine",
+      "birthYear": "41.9 BBY",
+      "vehicles": [],
+      "starships": [
+        "13"
+      ],
+      "weapons": [
+        "Lightsaber",
+        "Force choke"
+      ],
+      "imagePlaceholder": "#000000",
+      "imageUrl": "darth_vader.png",
+      "isForceUser": true,
+      "forceAlignment": "dark",
+      "appearances": [
+        "4",
+        "5",
+        "6",
+        "3"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "3",
+      "name": "Leia Organa",
+      "role": "Princess, General",
+      "affiliationId": "1",
+      "affiliations": [
+        "Rebel Alliance",
+        "Resistance",
+        "New Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "2",
+      "homeWorld": "Alderaan",
+      "birthYear": "19 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Blaster Pistol",
+        "Diplomatic skills"
+      ],
+      "imagePlaceholder": "#8e736f",
+      "imageUrl": "leia_organa.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "4",
+      "name": "Han Solo",
+      "role": "Smuggler, General",
+      "affiliationId": "1",
+      "affiliations": [
+        "Rebel Alliance",
+        "New Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "22",
+      "homeWorld": "Corellia",
+      "birthYear": "29 BBY",
+      "vehicles": [],
+      "starships": [
+        "10"
+      ],
+      "weapons": [
+        "DL-44 Blaster Pistol"
+      ],
+      "imagePlaceholder": "#523d28",
+      "imageUrl": "han_solo.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "5",
+      "name": "Obi-Wan Kenobi",
+      "role": "Jedi Master",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic",
+        "Rebel Alliance"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "20",
+      "homeWorld": "Stewjon",
+      "birthYear": "57 BBY",
+      "vehicles": [
+        "55"
+      ],
+      "starships": [
+        "48",
+        "59"
+      ],
+      "weapons": [
+        "Lightsaber"
+      ],
+      "imagePlaceholder": "#c4aa6f",
+      "imageUrl": "obi-wan_kenobi.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "6",
+      "name": "Chewbacca",
+      "role": "Co-pilot, Warrior",
+      "affiliationId": "1",
+      "affiliations": [
+        "Rebel Alliance",
+        "Resistance",
+        "New Republic"
+      ],
+      "speciesId": "3",
+      "species": "Wookiee",
+      "homeWorldId": "14",
+      "homeWorld": "Kashyyyk",
+      "birthYear": "200 BBY",
+      "vehicles": [],
+      "starships": [
+        "10"
+      ],
+      "weapons": [
+        "Bowcaster"
+      ],
+      "imagePlaceholder": "#6b5038",
+      "imageUrl": "chewbacca.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "7",
+      "name": "Anakin Skywalker",
+      "role": "Jedi Knight",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "1",
+      "homeWorld": "Tatooine",
+      "birthYear": "41.9 BBY",
+      "vehicles": [
+        "44"
+      ],
+      "starships": [
+        "48",
+        "59"
+      ],
+      "weapons": [
+        "Lightsaber"
+      ],
+      "imagePlaceholder": "#e8c56d",
+      "imageUrl": "anakim_skywalker.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "1",
+        "2",
+        "3"
+      ],
+      "status": "transformed"
+    },
+    {
+      "id": "8",
+      "name": "R2-D2",
+      "role": "Astromech Droid",
+      "affiliationId": "1",
+      "affiliations": [
+        "Galactic Republic",
+        "Rebel Alliance",
+        "Resistance"
+      ],
+      "speciesId": "2",
+      "species": "Droid",
+      "homeWorldId": "8",
+      "homeWorld": "Naboo",
+      "birthYear": null,
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Electric shock",
+        "Hacking tools"
+      ],
+      "imagePlaceholder": "#add8e6",
+      "imageUrl": "r2_d2.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "operational"
+    },
+    {
+      "id": "9",
+      "name": "C-3PO",
+      "role": "Protocol Droid",
+      "affiliationId": "1",
+      "affiliations": [
+        "Galactic Republic",
+        "Rebel Alliance",
+        "Resistance"
+      ],
+      "speciesId": "2",
+      "species": "Droid",
+      "homeWorldId": "1",
+      "homeWorld": "Tatooine",
+      "birthYear": null,
+      "vehicles": [],
+      "starships": [],
+      "weapons": [],
+      "imagePlaceholder": "#ffd700",
+      "imageUrl": "c3po.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "operational"
+    },
+    {
+      "id": "10",
+      "name": "Yoda",
+      "role": "Jedi Grand Master",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic"
+      ],
+      "speciesId": "6",
+      "species": "Yoda's species",
+      "homeWorldId": "28",
+      "homeWorld": "Unknown",
+      "birthYear": "896 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Lightsaber"
+      ],
+      "imagePlaceholder": "#8f9779",
+      "imageUrl": "yoda.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "6",
+        "8",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "11",
+      "name": "Darth Sidious",
+      "role": "Sith Lord, Emperor",
+      "affiliationId": "3",
+      "affiliations": [
+        "Sith Order",
+        "Galactic Empire",
+        "First Order"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "8",
+      "homeWorld": "Naboo",
+      "birthYear": "82 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Lightsaber",
+        "Force lightning"
+      ],
+      "imagePlaceholder": "#301934",
+      "imageUrl": "darth_sidious.png",
+      "isForceUser": true,
+      "forceAlignment": "dark",
+      "appearances": [
+        "1",
+        "2",
+        "3",
+        "6",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "12",
+      "name": "Qui-Gon Jinn",
+      "role": "Jedi Master",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "21",
+      "homeWorld": "Coruscant",
+      "birthYear": "92 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Lightsaber"
+      ],
+      "imagePlaceholder": "#3c3c3c",
+      "imageUrl": "qui-gonn_jinn.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "1"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "13",
+      "name": "Mace Windu",
+      "role": "Jedi Master",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "42",
+      "homeWorld": "Haruun Kal",
+      "birthYear": "72 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Purple Lightsaber"
+      ],
+      "imagePlaceholder": "#8b008b",
+      "imageUrl": "mace_windu.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "1",
+        "2",
+        "3"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "14",
+      "name": "Lando Calrissian",
+      "role": "Smuggler, General",
+      "affiliationId": "1",
+      "affiliations": [
+        "Rebel Alliance",
+        "New Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "30",
+      "homeWorld": "Socorro",
+      "birthYear": "31 BBY",
+      "vehicles": [],
+      "starships": [
+        "10",
+        "45"
+      ],
+      "weapons": [
+        "Blaster"
+      ],
+      "imagePlaceholder": "#4169e1",
+      "imageUrl": "lando_calrissian.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "5",
+        "6",
+        "9"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "15",
+      "name": "Boba Fett",
+      "role": "Bounty Hunter",
+      "affiliationId": "0",
+      "affiliations": [
+        "Independent"
+      ],
+      "speciesId": "1",
+      "species": "Human (Clone)",
+      "homeWorldId": "10",
+      "homeWorld": "Kamino",
+      "birthYear": "32 BBY",
+      "vehicles": [],
+      "starships": [
+        "21"
+      ],
+      "weapons": [
+        "Blaster Rifle",
+        "Flame Thrower",
+        "Wrist Rockets"
+      ],
+      "imagePlaceholder": "#4a6741",
+      "imageUrl": "boba_fett.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "5",
+        "6",
+        "2"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "16",
+      "name": "Padmé Amidala",
+      "role": "Queen, Senator",
+      "affiliationId": "2",
+      "affiliations": [
+        "Galactic Republic",
+        "Loyalist Committee"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "8",
+      "homeWorld": "Naboo",
+      "birthYear": "46 BBY",
+      "vehicles": [],
+      "starships": [
+        "39",
+        "49"
+      ],
+      "weapons": [
+        "Blaster Pistol",
+        "Diplomatic skills"
+      ],
+      "imagePlaceholder": "#722f37",
+      "imageUrl": "padmé_amidala.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "1",
+        "2",
+        "3"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "17",
+      "name": "Rey Skywalker",
+      "role": "Jedi",
+      "affiliationId": "4",
+      "affiliations": [
+        "Resistance",
+        "Jedi Order"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "60",
+      "homeWorld": "Jakku",
+      "birthYear": "15 ABY",
+      "vehicles": [],
+      "starships": [
+        "10"
+      ],
+      "weapons": [
+        "Lightsaber",
+        "Staff"
+      ],
+      "imagePlaceholder": "#b79268",
+      "imageUrl": "rey_skywalker.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "18",
+      "name": "Finn",
+      "role": "Stormtrooper, Resistance Fighter",
+      "affiliationId": "4",
+      "affiliations": [
+        "First Order",
+        "Resistance"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "0",
+      "homeWorld": "Unknown",
+      "birthYear": "Unknown",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Blaster",
+        "Lightsaber (temporary)"
+      ],
+      "imagePlaceholder": "#372e29",
+      "imageUrl": "finn.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "19",
+      "name": "Poe Dameron",
+      "role": "Pilot, Commander",
+      "affiliationId": "4",
+      "affiliations": [
+        "Resistance",
+        "New Republic"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "62",
+      "homeWorld": "Yavin 4",
+      "birthYear": "Unknown",
+      "vehicles": [],
+      "starships": [
+        "77"
+      ],
+      "weapons": [
+        "Blaster"
+      ],
+      "imagePlaceholder": "#564d4a",
+      "imageUrl": "poe_dameron.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "alive"
+    },
+    {
+      "id": "20",
+      "name": "Kylo Ren",
+      "role": "Supreme Leader, Dark Force User",
+      "affiliationId": "5",
+      "affiliations": [
+        "First Order",
+        "Knights of Ren"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "61",
+      "homeWorld": "Chandrila",
+      "birthYear": "5 ABY",
+      "vehicles": [],
+      "starships": [
+        "78"
+      ],
+      "weapons": [
+        "Crossguard Lightsaber"
+      ],
+      "imagePlaceholder": "#2b2b2b",
+      "imageUrl": "kylo_ren.png",
+      "isForceUser": true,
+      "forceAlignment": "dark",
+      "appearances": [
+        "7",
+        "8",
+        "9"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "21",
+      "name": "Ahsoka Tano",
+      "role": "Jedi Padawan, Force User",
+      "affiliationId": "2",
+      "affiliations": [
+        "Jedi Order",
+        "Galactic Republic",
+        "Rebel Alliance"
+      ],
+      "speciesId": "10",
+      "species": "Togruta",
+      "homeWorldId": "58",
+      "homeWorld": "Shili",
+      "birthYear": "36 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [
+        "Dual Lightsabers",
+        "White Lightsabers"
+      ],
+      "imagePlaceholder": "#e35d31",
+      "imageUrl": "ahsoka_tano.png",
+      "isForceUser": true,
+      "forceAlignment": "light",
+      "appearances": [],
+      "status": "alive"
+    },
+    {
+      "id": "22",
+      "name": "Count Dooku",
+      "role": "Sith Lord, Separatist Leader",
+      "affiliationId": "6",
+      "affiliations": [
+        "Jedi Order",
+        "Sith Order",
+        "Confederacy of Independent Systems"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "52",
+      "homeWorld": "Serenno",
+      "birthYear": "102 BBY",
+      "vehicles": [],
+      "starships": [
+        "50"
+      ],
+      "weapons": [
+        "Curved-hilt Lightsaber"
+      ],
+      "imagePlaceholder": "#8b4513",
+      "imageUrl": "count_dooku.png",
+      "isForceUser": true,
+      "forceAlignment": "dark",
+      "appearances": [
+        "2",
+        "3"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "23",
+      "name": "Jabba the Hutt",
+      "role": "Crime Lord",
+      "affiliationId": "0",
+      "affiliations": [
+        "Hutt Cartel"
+      ],
+      "speciesId": "5",
+      "species": "Hutt",
+      "homeWorldId": "24",
+      "homeWorld": "Nal Hutta",
+      "birthYear": "600 BBY",
+      "vehicles": [],
+      "starships": [],
+      "weapons": [],
+      "imagePlaceholder": "#7b6a4e",
+      "imageUrl": "jabba_the_hutt.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "4",
+        "6",
+        "1"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "24",
+      "name": "General Grievous",
+      "role": "Supreme Commander",
+      "affiliationId": "6",
+      "affiliations": [
+        "Confederacy of Independent Systems"
+      ],
+      "speciesId": "7",
+      "species": "Kaleesh Cyborg",
+      "homeWorldId": "59",
+      "homeWorld": "Kalee",
+      "birthYear": "Unknown",
+      "vehicles": [
+        "20"
+      ],
+      "starships": [
+        "47"
+      ],
+      "weapons": [
+        "Multiple Lightsabers",
+        "Blaster"
+      ],
+      "imagePlaceholder": "#c0c0c0",
+      "imageUrl": "general_grievous.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [
+        "3"
+      ],
+      "status": "deceased"
+    },
+    {
+      "id": "25",
+      "name": "Din Djarin",
+      "role": "Bounty Hunter, Mandalorian",
+      "affiliationId": "0",
+      "affiliations": [
+        "Mandalorian",
+        "Bounty Hunters' Guild"
+      ],
+      "speciesId": "1",
+      "species": "Human",
+      "homeWorldId": "0",
+      "homeWorld": "Unknown",
+      "birthYear": "Unknown",
+      "vehicles": [],
+      "starships": [
+        "85"
+      ],
+      "weapons": [
+        "Blaster",
+        "Beskar Spear",
+        "Darksaber",
+        "Whistling Birds"
+      ],
+      "imagePlaceholder": "#8b8878",
+      "imageUrl": "din_djarin.png",
+      "isForceUser": false,
+      "forceAlignment": null,
+      "appearances": [],
+      "status": "alive"
+    }
+  ],
+  "planets": [
+    {
+      "id": "0",
+      "name": "Unknown",
+      "region": "Unknown",
+      "sector": "Unknown",
+      "system": "Unknown",
+      "terrain": [
+        "Unknown"
+      ],
+      "climate": [
+        "Unknown"
+      ],
+      "population": "Unknown",
+      "notable_residents": [],
+      "affiliationId": 0,
+      "appearances": [],
+      "imagePlaceholder": "#555555"
+    },
+    {
+      "id": "1",
+      "name": "Tatooine",
+      "region": "Outer Rim Territories",
+      "sector": "Arkanis",
+      "system": "Tatoo system",
+      "terrain": [
+        "Desert"
+      ],
+      "climate": [
+        "Arid"
+      ],
+      "population": "200000",
+      "notable_residents": [
+        1,
+        2,
+        10
+      ],
+      "affiliationId": 0,
+      "appearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "imagePlaceholder": "#e5d9b2"
+    },
+    {
+      "id": "2",
+      "name": "Alderaan",
+      "region": "Core Worlds",
+      "sector": "Alderaan sector",
+      "system": "Alderaan system",
+      "terrain": [
+        "Grasslands",
+        "Mountains"
+      ],
+      "climate": [
+        "Temperate"
+      ],
+      "population": "2000000000",
+      "notable_residents": [
+        3
+      ],
+      "affiliationId": 1,
+      "appearances": [
+        1,
+        3,
+        4
+      ],
+      "imagePlaceholder": "#82a8c0",
+      "destroyed": true
+    },
+    {
+      "id": "8",
+      "name": "Naboo",
+      "region": "Mid Rim",
+      "sector": "Chommell sector",
+      "system": "Naboo system",
+      "terrain": [
+        "Grasslands",
+        "Hills",
+        "Swamps",
+        "Forests"
+      ],
+      "climate": [
+        "Temperate"
+      ],
+      "population": "4500000000",
+      "notable_residents": [
+        8,
+        21
+      ],
+      "affiliationId": 3,
+      "appearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "imagePlaceholder": "#94c993"
+    },
+    {
+      "id": "10",
+      "name": "Kamino",
+      "region": "Extragalactic",
+      "sector": "Wild Space",
+      "system": "Kamino system",
+      "terrain": [
+        "Ocean"
+      ],
+      "climate": [
+        "Stormy",
+        "Rainy"
+      ],
+      "population": "1000000000",
+      "notable_residents": [
+        9
+      ],
+      "affiliationId": 3,
+      "appearances": [
+        5
+      ],
+      "imagePlaceholder": "#2e3b56"
+    },
+    {
+      "id": "14",
+      "name": "Kashyyyk",
+      "region": "Mid Rim",
+      "sector": "Mytaranor sector",
+      "system": "Kashyyyk system",
+      "terrain": [
+        "Jungle",
+        "Forests"
+      ],
+      "climate": [
+        "Tropical"
+      ],
+      "population": "45000000",
+      "notable_residents": [
+        5
+      ],
+      "affiliationId": 3,
+      "appearances": [
+        3,
+        6
+      ],
+      "imagePlaceholder": "#2d572c"
+    },
+    {
+      "id": "20",
+      "name": "Stewjon",
+      "region": "Mid Rim",
+      "sector": "Unknown",
+      "system": "Stewjon system",
+      "terrain": [
+        "Grasslands",
+        "Mountains"
+      ],
+      "climate": [
+        "Temperate"
+      ],
+      "population": "Unknown",
+      "notable_residents": [
+        7
+      ],
+      "affiliationId": 0,
+      "appearances": [],
+      "imagePlaceholder": "#8da87c"
+    },
+    {
+      "id": "22",
+      "name": "Corellia",
+      "region": "Core Worlds",
+      "sector": "Corellian sector",
+      "system": "Corellian system",
+      "terrain": [
+        "Plains",
+        "Urban",
+        "Hills"
+      ],
+      "climate": [
+        "Temperate"
+      ],
+      "population": "3000000000",
+      "notable_residents": [
+        4
+      ],
+      "affiliationId": 0,
+      "appearances": [
+        2,
+        10
+      ],
+      "imagePlaceholder": "#7c8da8"
+    },
+    {
+      "id": "28",
+      "name": "Dagobah",
+      "region": "Outer Rim Territories",
+      "sector": "Sluis sector",
+      "system": "Dagobah system",
+      "terrain": [
+        "Swamp",
+        "Jungles"
+      ],
+      "climate": [
+        "Murky"
+      ],
+      "population": "Unknown",
+      "notable_residents": [
+        6
+      ],
+      "affiliationId": 0,
+      "appearances": [
+        2,
+        3,
+        5
+      ],
+      "imagePlaceholder": "#3a5229"
+    },
+    {
+      "id": "31",
+      "name": "Yavin 4",
+      "region": "Outer Rim Territories",
+      "sector": "Gordian Reach",
+      "system": "Yavin system",
+      "terrain": [
+        "Jungle",
+        "Rainforests"
+      ],
+      "climate": [
+        "Tropical",
+        "Temperate"
+      ],
+      "population": "1000",
+      "notable_residents": [
+        15
+      ],
+      "affiliationId": 1,
+      "appearances": [
+        4
+      ],
+      "imagePlaceholder": "#657e40"
+    },
+    {
+      "id": "35",
+      "name": "Chandrila",
+      "region": "Core Worlds",
+      "sector": "Bormea sector",
+      "system": "Chandrila system",
+      "terrain": [
+        "Plains",
+        "Forests",
+        "Seas"
+      ],
+      "climate": [
+        "Temperate"
+      ],
+      "population": "1200000000",
+      "notable_residents": [
+        13,
+        14
+      ],
+      "affiliationId": 3,
+      "appearances": [],
+      "imagePlaceholder": "#a0b5d6"
+    },
+    {
+      "id": "60",
+      "name": "Jakku",
+      "region": "Western Reaches",
+      "sector": "Unknown",
+      "system": "Jakku system",
+      "terrain": [
+        "Desert"
+      ],
+      "climate": [
+        "Arid"
+      ],
+      "population": "Unknown",
+      "notable_residents": [
+        11
+      ],
+      "affiliationId": 0,
+      "appearances": [
+        7,
+        9
+      ],
+      "imagePlaceholder": "#d9c397"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "5",
+      "name": "X-34 Landspeeder",
+      "model": "X-34 landspeeder",
+      "manufacturer": "SoroSuub Corporation",
+      "class": "Civilian transport",
+      "type": "Landspeeder",
+      "crew": 1,
+      "passengers": 1,
+      "cost_in_credits": "10550",
+      "length": "3.4",
+      "max_speed": "250",
+      "affiliationId": 0,
+      "imagePlaceholder": "#c49b71",
+      "pilots": [
+        1
+      ],
+      "appearances": [
+        4
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Snowspeeder",
+      "model": "T-47 airspeeder",
+      "manufacturer": "Incom Corporation",
+      "class": "Military airspeeder",
+      "type": "Airspeeder",
+      "crew": 2,
+      "passengers": 0,
+      "cost_in_credits": "Unknown",
+      "length": "4.5",
+      "max_speed": "1050",
+      "affiliationId": 1,
+      "imagePlaceholder": "#dfe0df",
+      "pilots": [
+        1
+      ],
+      "appearances": [
+        2
+      ]
+    },
+    {
+      "id": "30",
+      "name": "Imperial Speeder Bike",
+      "model": "74-Z speeder bike",
+      "manufacturer": "Aratech Repulsor Company",
+      "class": "Military transport",
+      "type": "Speeder bike",
+      "crew": 1,
+      "passengers": 1,
+      "cost_in_credits": "8000",
+      "length": "3",
+      "max_speed": "500",
+      "affiliationId": 2,
+      "imagePlaceholder": "#5a5a5a",
+      "pilots": [
+        3
+      ],
+      "appearances": [
+        3
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Tribubble Bongo",
+      "model": "Tribubble bongo",
+      "manufacturer": "Otoh Gunga Bongameken Cooperative",
+      "class": "Submarine",
+      "type": "Submarine",
+      "crew": 2,
+      "passengers": 2,
+      "cost_in_credits": "Unknown",
+      "length": "15",
+      "max_speed": "85",
+      "affiliationId": 0,
+      "imagePlaceholder": "#6b8e94",
+      "pilots": [
+        7
+      ],
+      "appearances": [
+        4
+      ]
+    },
+    {
+      "id": "44",
+      "name": "Zephyr-G Swoop",
+      "model": "Zephyr-G swoop bike",
+      "manufacturer": "Mobquet Swoops and Speeders",
+      "class": "Racing craft",
+      "type": "Swoop",
+      "crew": 1,
+      "passengers": 0,
+      "cost_in_credits": "5750",
+      "length": "3.68",
+      "max_speed": "700",
+      "affiliationId": 0,
+      "imagePlaceholder": "#835e4a",
+      "pilots": [
+        10
+      ],
+      "appearances": [
+        5
+      ]
+    },
+    {
+      "id": "46",
+      "name": "XJ-6 Airspeeder",
+      "model": "XJ-6 airspeeder",
+      "manufacturer": "Narglatch AirTech",
+      "class": "Civilian transport",
+      "type": "Airspeeder",
+      "crew": 1,
+      "passengers": 1,
+      "cost_in_credits": "Unknown",
+      "length": "6.23",
+      "max_speed": "720",
+      "affiliationId": 0,
+      "imagePlaceholder": "#802e0f",
+      "pilots": [
+        10
+      ],
+      "appearances": [
+        5
+      ]
+    }
+  ],
+  "affiliations": [
+    {
+      "id": 0,
+      "name": "Independent",
+      "type": "Other",
+      "era": [
+        "All"
+      ],
+      "leader": [],
+      "headquarters": [],
+      "description": "Not affiliated with any major galactic organization",
+      "imagePlaceholder": "#777777"
+    },
+    {
+      "id": 1,
+      "name": "Rebel Alliance",
+      "type": "Military/Political",
+      "era": [
+        "Galactic Civil War"
+      ],
+      "leader": [
+        3,
+        22
+      ],
+      "headquarters": [
+        31,
+        18
+      ],
+      "description": "Alliance to Restore the Republic, a resistance movement formed to oppose the Galactic Empire",
+      "imagePlaceholder": "#ff4500",
+      "followed_by": [
+        7
+      ],
+      "opposed": [
+        2
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Galactic Empire",
+      "type": "Government/Military",
+      "era": [
+        "Imperial Era",
+        "Galactic Civil War"
+      ],
+      "leader": [
+        8
+      ],
+      "headquarters": [
+        9
+      ],
+      "description": "Autocratic regime that replaced the Galactic Republic and ruled the galaxy",
+      "imagePlaceholder": "#000000",
+      "preceded_by": [
+        3
+      ],
+      "followed_by": [
+        6
+      ],
+      "opposed": [
+        1
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jedi Order",
+      "type": "Religious/Peacekeeping",
+      "era": [
+        "Pre-Republic Era",
+        "High Republic Era",
+        "Fall of the Republic",
+        "New Republic Era"
+      ],
+      "leader": [
+        6,
+        7
+      ],
+      "headquarters": [
+        9
+      ],
+      "description": "Order of Force-sensitive guardians who served as peacekeepers in the Galactic Republic",
+      "imagePlaceholder": "#4682b4",
+      "opposed": [
+        5
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Resistance",
+      "type": "Military",
+      "era": [
+        "New Republic Era",
+        "First Order–Resistance War"
+      ],
+      "leader": [
+        3,
+        15
+      ],
+      "headquarters": [
+        30,
+        31
+      ],
+      "description": "Military force founded by Leia Organa to counter the threat of the First Order",
+      "imagePlaceholder": "#ffa500",
+      "preceded_by": [
+        7
+      ],
+      "opposed": [
+        6
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sith Order",
+      "type": "Religious",
+      "era": [
+        "Old Republic Era",
+        "Fall of the Republic",
+        "Imperial Era"
+      ],
+      "leader": [
+        8
+      ],
+      "headquarters": [
+        25
+      ],
+      "description": "Ancient organization of Force-sensitive beings who used the dark side of the Force",
+      "imagePlaceholder": "#8b0000",
+      "opposed": [
+        3
+      ]
+    },
+    {
+      "id": 6,
+      "name": "First Order",
+      "type": "Military/Political",
+      "era": [
+        "New Republic Era",
+        "First Order–Resistance War"
+      ],
+      "leader": [
+        13,
+        25
+      ],
+      "headquarters": [
+        40
+      ],
+      "description": "Military junta inspired by the Galactic Empire that rose from its remnants",
+      "imagePlaceholder": "#2f4f4f",
+      "preceded_by": [
+        2
+      ],
+      "opposed": [
+        4,
+        7
+      ]
+    },
+    {
+      "id": 7,
+      "name": "New Republic",
+      "type": "Government",
+      "era": [
+        "New Republic Era"
+      ],
+      "leader": [
+        3,
+        23
+      ],
+      "headquarters": [
+        35,
+        36
+      ],
+      "description": "Democratic government formed after the fall of the Galactic Empire",
+      "imagePlaceholder": "#6495ed",
+      "preceded_by": [
+        1
+      ],
+      "followed_by": [
+        4
+      ],
+      "opposed": [
+        6
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Galactic Republic",
+      "type": "Government",
+      "era": [
+        "High Republic Era",
+        "Fall of the Republic"
+      ],
+      "leader": [
+        21
+      ],
+      "headquarters": [
+        9
+      ],
+      "description": "Democratic union that governed the galaxy before the rise of the Empire",
+      "imagePlaceholder": "#b22222",
+      "followed_by": [
+        2
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Trade Federation",
+      "type": "Commercial",
+      "era": [
+        "Fall of the Republic"
+      ],
+      "leader": [
+        26
+      ],
+      "headquarters": [
+        39
+      ],
+      "description": "Vast commercial organization that controlled trade routes and possessed substantial military power",
+      "imagePlaceholder": "#2e8b57",
+      "opposed": [
+        8
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Bounty Hunters' Guild",
+      "type": "Organization",
+      "era": [
+        "Imperial Era",
+        "New Republic Era"
+      ],
+      "leader": [],
+      "headquarters": [],
+      "description": "Organization that regulated bounty hunting throughout the galaxy",
+      "imagePlaceholder": "#8b4513"
+    }
+  ],
+  "starships": [
+    {
+      "id": "10",
+      "name": "Millennium Falcon",
+      "model": "YT-1300 light freighter",
+      "manufacturer": "Corellian Engineering Corporation",
+      "class": "Light freighter",
+      "cost_in_credits": "100000",
+      "length": "34.75",
+      "max_atmosphering_speed": "1050",
+      "hyperdrive_rating": "0.5",
+      "MGLT": "75",
+      "crew": 4,
+      "passengers": 6,
+      "cargo_capacity": "100000",
+      "consumables": "2 months",
+      "armament": [
+        "Laser cannons",
+        "Concussion missiles"
+      ],
+      "affiliationId": 1,
+      "imagePlaceholder": "#c0c0c0",
+      "pilots": [
+        4,
+        5,
+        11
+      ],
+      "appearances": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "special_features": [
+        "Modified hyperdrive",
+        "Concealed smuggling compartments",
+        "Military-grade shields"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "X-wing",
+      "model": "T-65 X-wing starfighter",
+      "manufacturer": "Incom Corporation",
+      "class": "Starfighter",
+      "cost_in_credits": "149999",
+      "length": "12.5",
+      "max_atmosphering_speed": "1050",
+      "hyperdrive_rating": "1",
+      "MGLT": "100",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "110",
+      "consumables": "1 week",
+      "armament": [
+        "Laser cannons",
+        "Proton torpedoes"
+      ],
+      "affiliationId": 1,
+      "imagePlaceholder": "#e5e5e5",
+      "pilots": [
+        1
+      ],
+      "appearances": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "special_features": [
+        "Astromech droid socket",
+        "S-foils that open for combat"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "TIE Advanced x1",
+      "model": "Twin Ion Engine Advanced x1",
+      "manufacturer": "Sienar Fleet Systems",
+      "class": "Starfighter",
+      "cost_in_credits": "Unknown",
+      "length": "9.2",
+      "max_atmosphering_speed": "1200",
+      "hyperdrive_rating": "1",
+      "MGLT": "105",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "150",
+      "consumables": "5 days",
+      "armament": [
+        "Laser cannons"
+      ],
+      "affiliationId": 2,
+      "imagePlaceholder": "#454545",
+      "pilots": [
+        2
+      ],
+      "appearances": [
+        1
+      ],
+      "special_features": [
+        "Improved hull armor",
+        "Hyperdrive",
+        "Deflector shields"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Slave I",
+      "model": "Firespray-31-class patrol and attack craft",
+      "manufacturer": "Kuat Systems Engineering",
+      "class": "Patrol craft",
+      "cost_in_credits": "Unknown",
+      "length": "21.5",
+      "max_atmosphering_speed": "1000",
+      "hyperdrive_rating": "3",
+      "MGLT": "70",
+      "crew": 1,
+      "passengers": 6,
+      "cargo_capacity": "70000",
+      "consumables": "1 month",
+      "armament": [
+        "Blaster cannons",
+        "Ion cannons",
+        "Proton torpedoes",
+        "Concussion missiles",
+        "Mine launcher"
+      ],
+      "affiliationId": 0,
+      "imagePlaceholder": "#7b8c65",
+      "pilots": [
+        9
+      ],
+      "appearances": [
+        2,
+        5
+      ],
+      "special_features": [
+        "Rotating cockpit",
+        "Prison cells",
+        "Tracking equipment"
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Imperial shuttle",
+      "model": "Lambda-class T-4a shuttle",
+      "manufacturer": "Sienar Fleet Systems",
+      "class": "Armed shuttle",
+      "cost_in_credits": "240000",
+      "length": "20",
+      "max_atmosphering_speed": "850",
+      "hyperdrive_rating": "1",
+      "MGLT": "50",
+      "crew": 6,
+      "passengers": 20,
+      "cargo_capacity": "80000",
+      "consumables": "2 months",
+      "armament": [
+        "Double laser cannons"
+      ],
+      "affiliationId": 2,
+      "imagePlaceholder": "#dcdcdc",
+      "pilots": [
+        1,
+        4
+      ],
+      "appearances": [
+        2,
+        3
+      ],
+      "special_features": [
+        "Folding wings",
+        "Military-grade communications",
+        "Reinforced hull"
+      ]
+    },
+    {
+      "id": "39",
+      "name": "Naboo N-1 Starfighter",
+      "model": "N-1 starfighter",
+      "manufacturer": "Theed Palace Space Vessel Engineering Corps",
+      "class": "Starfighter",
+      "cost_in_credits": "200000",
+      "length": "11",
+      "max_atmosphering_speed": "1100",
+      "hyperdrive_rating": "1",
+      "MGLT": "Unknown",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "65",
+      "consumables": "7 days",
+      "armament": [
+        "Laser cannons",
+        "Proton torpedoes"
+      ],
+      "affiliationId": 8,
+      "imagePlaceholder": "#f9e076",
+      "pilots": [
+        10
+      ],
+      "appearances": [
+        4,
+        5,
+        6
+      ],
+      "special_features": [
+        "Astromech droid socket",
+        "Chromium finish",
+        "Atmospheric capabilities"
+      ]
+    },
+    {
+      "id": "48",
+      "name": "Jedi Starfighter",
+      "model": "Delta-7 Aethersprite-class light interceptor",
+      "manufacturer": "Kuat Systems Engineering",
+      "class": "Starfighter",
+      "cost_in_credits": "180000",
+      "length": "8",
+      "max_atmosphering_speed": "1150",
+      "hyperdrive_rating": "1",
+      "MGLT": "Unknown",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "60",
+      "consumables": "7 days",
+      "armament": [
+        "Laser cannons"
+      ],
+      "affiliationId": 3,
+      "imagePlaceholder": "#b22222",
+      "pilots": [
+        7
+      ],
+      "appearances": [
+        5
+      ],
+      "special_features": [
+        "Hyperdrive ring docking capability",
+        "Enhanced maneuverability"
+      ]
+    },
+    {
+      "id": "59",
+      "name": "Eta-2 Actis-class Light Interceptor",
+      "model": "Eta-2 Actis-class light interceptor",
+      "manufacturer": "Kuat Systems Engineering",
+      "class": "Starfighter",
+      "cost_in_credits": "Unknown",
+      "length": "5.47",
+      "max_atmosphering_speed": "1500",
+      "hyperdrive_rating": "1",
+      "MGLT": "Unknown",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "60",
+      "consumables": "2 days",
+      "armament": [
+        "Laser cannons",
+        "Light laser cannons"
+      ],
+      "affiliationId": 3,
+      "imagePlaceholder": "#f2d50f",
+      "pilots": [
+        7,
+        10
+      ],
+      "appearances": [
+        6
+      ],
+      "special_features": [
+        "Extreme maneuverability",
+        "S-foils",
+        "Hyperdrive ring docking"
+      ]
+    },
+    {
+      "id": "65",
+      "name": "Belbullab-22 Starfighter",
+      "model": "Belbullab-22 starfighter",
+      "manufacturer": "Feethan Ottraw Scalable Assemblies",
+      "class": "Starfighter",
+      "cost_in_credits": "168000",
+      "length": "6.71",
+      "max_atmosphering_speed": "1100",
+      "hyperdrive_rating": "6",
+      "MGLT": "Unknown",
+      "crew": 1,
+      "passengers": 0,
+      "cargo_capacity": "140",
+      "consumables": "7 days",
+      "armament": [
+        "Laser cannons"
+      ],
+      "affiliationId": 9,
+      "imagePlaceholder": "#6b8eG2",
+      "pilots": [
+        7,
+        10
+      ],
+      "appearances": [
+        6
+      ],
+      "special_features": [
+        "Extreme maneuverability",
+        "S-foils",
+        "Hyperdrive ring docking"
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": 0,
+      "name": "Unknown",
+      "classification": "Unknown",
+      "designation": "Unknown",
+      "average_height": "Unknown",
+      "average_lifespan": "Unknown",
+      "language": "Unknown",
+      "homeWorldId": 0,
+      "imagePlaceholder": "#555555"
+    },
+    {
+      "id": 1,
+      "name": "Human",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "180",
+      "average_lifespan": "120",
+      "language": "Galactic Basic",
+      "homeWorldId": 0,
+      "imagePlaceholder": "#c4a890"
+    },
+    {
+      "id": 2,
+      "name": "Droid",
+      "classification": "Artificial",
+      "designation": "Sentient",
+      "average_height": "Varies",
+      "average_lifespan": "Indefinite",
+      "language": "Binary",
+      "homeWorldId": 0,
+      "imagePlaceholder": "#8c8c8c"
+    },
+    {
+      "id": 3,
+      "name": "Wookiee",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "210",
+      "average_lifespan": "400",
+      "language": "Shyriiwook",
+      "homeWorldId": 14,
+      "imagePlaceholder": "#6c5434"
+    },
+    {
+      "id": 4,
+      "name": "Rodian",
+      "classification": "Reptilian",
+      "designation": "Sentient",
+      "average_height": "170",
+      "average_lifespan": "89",
+      "language": "Rodese",
+      "homeWorldId": 23,
+      "imagePlaceholder": "#5fa054"
+    },
+    {
+      "id": 5,
+      "name": "Hutt",
+      "classification": "Gastropod",
+      "designation": "Sentient",
+      "average_height": "300",
+      "average_lifespan": "1000",
+      "language": "Huttese",
+      "homeWorldId": 24,
+      "imagePlaceholder": "#8c7351"
+    },
+    {
+      "id": 6,
+      "name": "Yoda's species",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "66",
+      "average_lifespan": "900",
+      "language": "Galactic Basic",
+      "homeWorldId": 28,
+      "imagePlaceholder": "#7a8b69"
+    },
+    {
+      "id": 7,
+      "name": "Twi'lek",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "200",
+      "average_lifespan": "80",
+      "language": "Twi'leki",
+      "homeWorldId": 37,
+      "imagePlaceholder": "#7091b8"
+    },
+    {
+      "id": 8,
+      "name": "Mon Calamari",
+      "classification": "Amphibian",
+      "designation": "Sentient",
+      "average_height": "175",
+      "average_lifespan": "100",
+      "language": "Mon Calamarian",
+      "homeWorldId": 31,
+      "imagePlaceholder": "#c87137"
+    },
+    {
+      "id": 9,
+      "name": "Ewok",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "100",
+      "average_lifespan": "65",
+      "language": "Ewokese",
+      "homeWorldId": 7,
+      "imagePlaceholder": "#9c7c5c"
+    },
+    {
+      "id": 10,
+      "name": "Sullustan",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "180",
+      "average_lifespan": "75",
+      "language": "Sullustese",
+      "homeWorldId": 33,
+      "imagePlaceholder": "#857161"
+    },
+    {
+      "id": 11,
+      "name": "Zabrak",
+      "classification": "Mammal",
+      "designation": "Sentient",
+      "average_height": "180",
+      "average_lifespan": "130",
+      "language": "Galactic Basic",
+      "homeWorldId": 45,
+      "imagePlaceholder": "#b05c5c"
+    },
+    {
+      "id": 12,
+      "name": "Gungan",
+      "classification": "Amphibian",
+      "designation": "Sentient",
+      "average_height": "190",
+      "average_lifespan": "90",
+      "language": "Gungan Basic",
+      "homeWorldId": 8,
+      "imagePlaceholder": "#8c9c51"
+    }
+  ]
+}
